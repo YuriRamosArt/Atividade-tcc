@@ -1,0 +1,22 @@
+
+:root{
+    --cor-fundo-primeira:#F2F3E9;
+    --cor-fundo-secudaria:#989897;
+    --cor-fundo-terceira:#999992;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(to left, #F2F3E9 20%, #989897 30%, #999992 40%);
+}
+
+.suplementos_png{
+    margin: 15px;
+    width: 8;
+}
+
+
