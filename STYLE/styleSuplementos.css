@@ -2,10 +2,22 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     background: linear-gradient(to left, #F2F3E9 20%, #989897 30%, #999992 40%);
 }
 
 .suplementos_png{
-    margin: 15;
+    margin: 15px;
+    width: 10;
+    padding: 10px;
 }
+
+#Max{
+
+}
+
+h1{
+
+}
+
