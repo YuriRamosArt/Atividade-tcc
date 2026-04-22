@@ -20,8 +20,7 @@ body{
     background-color: #fff;
     width: 320px;
     height: 400px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;  
     margin: 50px;
 }
 
@@ -49,4 +48,27 @@ body{
     font-weight: normal;
     font-size: 20px;
     margin-top: 2px;
+}
+
+.carrinho{
+    background-color: #6E6E6E;
+    width: 194px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 27px;
+    font-weight: normal;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    top: 110px;
+    right: 280px;
+    text-align: center;
+}
+
+.carrinho_img{
+    width: 48px;
+    position: relative;
+    top: 163px;
+    right: 140px;
+    z-index: 1;
+    margin-left: 5px;
 }
