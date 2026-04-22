@@ -6,6 +6,7 @@
 
 body{
     background: linear-gradient(to left, #F2F3E9 20%, #989897 30%, #999992 40%);
+    height: 100vh;
 }
 
 .suplementos_png{
@@ -14,7 +15,7 @@ body{
     padding: 10px;
 }
 
-.card_whey{
+.card_wheyT{
     display: flex;
     align-items: center;
     background-color: #fff;
@@ -29,7 +30,7 @@ body{
     height: 200px;
 }
 
-.descricao_preco{
+.descricao_preco_max{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -38,13 +39,13 @@ body{
     text-align: center;
 }
 
-.descricao{
+.descricao_wheyT{
     font-weight: normal;
     font-size: 20px;
     margin-top: 10px;
 }
 
-.preco{
+.preco_wheyT{
     font-weight: normal;
     font-size: 20px;
     margin-top: 2px;
@@ -71,4 +72,76 @@ body{
     right: 140px;
     z-index: 1;
     margin-left: 5px;
+}
+
+.card_wheyF{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    width: 320px;
+    height: 400px;
+    border-radius: 10px;  
+    margin: 50px;
+}
+
+.wheyFresh{
+    width: 200px;
+    height: 200px;
+}
+
+.descricao_wheyF{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    font-family: 'Inter', sans-serif;
+    text-align: center
+}
+
+.descricao_wheyF{
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.preco_wheyF{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.card_creatina{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    width: 320px;
+    height: 400px;
+    border-radius: 10px;  
+    margin: 50px;
+}
+
+.creatina_dark{
+    width: 200px;
+    height: 170px;
+}
+
+.descricao_creatina{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    font-family: 'Inter', sans-serif;
+    text-align: center
+}
+
+.descricao_creatina_dark{
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.preco_dark{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 2px;
 }
