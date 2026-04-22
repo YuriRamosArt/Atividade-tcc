@@ -9,7 +9,6 @@ body {
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
   text-align: center;
-  align-items: center;
 }
 
 .login-card h2 {
@@ -43,3 +42,4 @@ body {
   padding: 10px;
   border: none;
 
+}
