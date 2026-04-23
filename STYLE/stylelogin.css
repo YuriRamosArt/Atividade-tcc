@@ -34,12 +34,12 @@ body {
 }
 
 .input-group label {
-  font-size: 14px;
+  font-size: 18px;
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
  .input-group input {
-  padding: 10px;
+  padding: 15px;
   width: 100%;
   border-radius: 6px;
   border: 1px solid #ccc;
@@ -67,9 +67,27 @@ body {
 
 .extra {
   margin-top: 15px;
-  font-size: 12px;
+  font-size: 17px;
 }
 .extra a{
   color: #000000;
   text-decoration: none;
+}
+
+.extra a:hover{
+ text-decoration: underline;
+}
+
+.cadastro{
+  margin-top: 15px;
+  font-size: 17px;
+}
+
+.cadastro a{
+  color: #000000;
+  text-decoration: none;
+}
+
+.cadastro a:hover{
+  text-decoration: underline;
 }
