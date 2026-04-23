@@ -322,3 +322,26 @@ body{
     font-size: 20px;
     margin-top: 3px
 }
+
+.carrinho_img_wheyFM{
+    width: 48px;
+    position: relative;
+    top: 163px;
+    right: 150px;
+    z-index: 1;
+    margin-left: 5px;
+}
+
+.carrinho_wheyFM{
+    background-color: #6E6E6E;
+    width: 194px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 27px;
+    font-weight: normal;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    top: 110px;
+    right: 290px;
+    text-align: center;
+}
