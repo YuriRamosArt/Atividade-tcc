@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #B1D3FA, #3D3D3D);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 60px;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.card h2{
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.input-group input {
+  padding: 15px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #4facfe;
+}
+
+.login-button {
+  width: 50%;
+  padding: 20px;
+  border: none;
+  background: linear-gradient(to left, #B1D3FA, #3D3D3D);;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background: #000000;
+}
+
+.cadastro{
+  margin-top: 15px;
+  font-size: 17px;
+}
+
+.cadastro a{
+  color: #000000;
+  text-decoration: none;
+}
+
+.cadastro a:hover{
+  text-decoration: underline;
+}
