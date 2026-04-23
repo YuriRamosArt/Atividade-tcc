@@ -4,6 +4,7 @@
     padding: 8px;
     background-color: black;
     margin: auto;
+    right: auto;
 }
 .barraazul{
     width: 180cap;
@@ -11,36 +12,69 @@
     background-color:#C6E4F6;
     padding:40px;
     margin: auto;
+    right: auto;
 }
+
+.menu{
+    margin-left: 300px;
+}
+
 .menu a{
     color:rgb(0, 0, 0) ;
-    gap: 30px;
-    margin-left: 90px;
     text-decoration: none;
     font-size: 20px;
-    left: 20px;
-    margin-top: 10cm;
+    padding-left: 100px;
+    margin-left: 10px;
 }
-.fretegratis a{
+
+.fretegratis {
     font-size: 20px;
     color: rgb(255, 255, 255);
     margin-left: 900px;
     text-decoration: none;
     top: 0;
     position: relative;
-
-}
-.paginainicial{
-    height:auto;
-    width: 100%;
-    display: block;
-    align-items: center;
+    font-family:Georgia, 'Times New Roman', Times, serif
 
 }
 .carrinho{
     position: absolute;
     left: 1700px;
     right: 20%;
-    top: 10px;
-    size: 200cap;
+    top: 40px;
+    width: 90px;
+}
+.hamburguer{
+    position: absolute;
+    left: 190px;
+    right: 10%;
+    margin-top:-20px;
+    height: 40px;
+}
+.logo{
+    height: 150px;
+    margin-top: -70px;
+    left: 10;
+    
+}
+.pesquisar{
+    left: 1200px;
+    position: absolute;
+    margin-top: -40px;
+    right: 100%;
+    width: 1000px;
+}
+.perfil{
+    position: absolute;
+    left: 1780px;
+    right: 20%;
+    top: 50px;
+    width: 70px;
+}
+.lupa{
+    position: absolute;
+    left: 1220px;
+    right: 5%;
+    top: 65px;
+    width: 30px;
 }
