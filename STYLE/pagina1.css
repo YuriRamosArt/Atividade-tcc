@@ -46,23 +46,25 @@
 }
 .hamburguer{
     position: absolute;
-    left: 190px;
+    left: 300px;
     right: 10%;
-    margin-top:-20px;
+    margin-top:-30px;
     height: 40px;
 }
 .logo{
     height: 150px;
     margin-top: -70px;
-    left: 10;
+    left: 15;
+    position: absolute;
     
 }
 .pesquisar{
-    left: 1200px;
-    position: absolute;
-    margin-top: -40px;
-    right: 100%;
-    width: 1000px;
+    outline: none;
+    width: 100%;
+    display: block;
+    margin-left: 1300px;
+    margin-top: -20px;
+    
 }
 .perfil{
     position: absolute;
