@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --cor-card-background:#fff;
+    --cor-carrinho-background: #6E6E6E;
+
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -18,7 +25,7 @@ body{
 .card_wheyT{
     display: flex;
     align-items: center;
-    background-color: #fff;
+    background-color:var(--cor-card-background);
     width: 320px;
     height: 400px;
     border-radius: 10px;  
@@ -52,7 +59,7 @@ body{
 }
 
 .carrinho{
-    background-color: #6E6E6E;
+    background-color:var(--cor-carrinho-background);
     width: 194px;
     height: 60px;
     border-radius: 10px;
@@ -77,7 +84,7 @@ body{
 .card_wheyF{
     display: flex;
     align-items: center;
-    background-color: #fff;
+    background-color:var(--cor-card-background);
     width: 320px;
     height: 400px;
     border-radius: 10px;  
@@ -113,7 +120,7 @@ body{
 .card_creatina{
     display: flex;
     align-items: center;
-    background-color: #fff;
+    background-color: var(--cor-card-background);
     width: 320px;
     height: 400px;
     border-radius: 10px;  
@@ -147,7 +154,7 @@ body{
 }
 
 .carrinho_d{    
-    background-color: #6E6E6E;
+    background-color: var(--cor-carrinho-background);
     width: 194px;
     height: 60px;
     border-radius: 10px;
@@ -172,7 +179,7 @@ body{
 .card_cafeina{   
     display: flex;
     align-items: center;
-    background-color: #fff;
+    background-color: var(--cor-card-background);
     width: 320px;
     height: 400px;
     border-radius: 10px;  
@@ -215,7 +222,7 @@ body{
 }
 
 .carrinho_c{
-    background-color: #6E6E6E;
+    background-color:var(--cor-carrinho-background);
     width: 194px;
     height: 60px;
     border-radius: 10px;
@@ -231,7 +238,7 @@ body{
 .card_raze{
     display: flex;
     align-items: center;
-    background-color: #fff;
+    background-color:var(--cor-card-background);
     width: 330px;
     height: 400px;
     border-radius: 10px;  
@@ -274,7 +281,7 @@ body{
 }
 
 .carrinho_r{
-    background-color: #6E6E6E;
+    background-color:var(--cor-carrinho-background);
     width: 194px;
     height: 60px;
     border-radius: 10px;
@@ -290,7 +297,7 @@ body{
 .card_wheyFM{
     display: flex;
     align-items: center;
-    background-color: #fff;
+    background-color:var(--cor-card-background);
     width: 330px;
     height: 390px;
     border-radius: 10px;  
@@ -333,7 +340,7 @@ body{
 }
 
 .carrinho_wheyFM{
-    background-color: #6E6E6E;
+    background-color:var(--cor-carrinho-background);
     width: 194px;
     height: 60px;
     border-radius: 10px;
