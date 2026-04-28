@@ -9,3 +9,24 @@ body{
     background: linear-gradient(to left, #F2F3E9 20%, #989897 30%, #999992 40%);
     height: 100vh;
 }
+
+.acessorios_png{
+    margin: 29px;
+    width: 30rem;
+}
+
+.card_coqueteleira{
+    display: flex;
+    align-items: center;
+    background-color: #FFFF;
+    width: 330px;
+    height: 320px;
+    border-radius: 20px;
+    margin: 50px;
+}
+
+.coqueteleira{
+    height: 270px;
+    margin: 20px;
+}
+
