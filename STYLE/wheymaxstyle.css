@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    box-sizing: border-box;
+}
+body{
+    background: #989897;
+}
+.topo{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: to right,#989897,#F2F3E9;
+    color: white;
+}
+.topo nav a{
+margin: 0 10px;
+color: white;
+text-align: none;
+}
+.topo input{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+.container{
+    max-width: 900px;
+    margin: 40px auto;
+}
