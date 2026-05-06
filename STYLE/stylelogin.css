@@ -5,6 +5,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
  
 .login-card {
   background: rgba(225, 255, 255, 0.15);
@@ -18,6 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
 }
 
 .image {
@@ -42,9 +44,10 @@ body {
   display: block;
   margin-bottom: 8px;
 }
+
  .input-group input {
   padding: 15px;
-  width: 100%;
+  width: 350px;
   border-radius: 6px;
   border: 1px solid #ccc;
   outline: none;
