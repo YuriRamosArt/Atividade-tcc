@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%;
+}
+
+/* Barra superior */
+.top-bar {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* Header principal */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #BEE6FF,#709AB3, #181818);
+  padding: 10px 20px;
+  overflow: hidden;
+  height: 70px;
+}
+
+
+/* Lado esquerdo */
+.left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu-icon {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.logo {
+  height: 40px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+/* Lado direito */
+.right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-box input {
+  padding: 8px 25px;
+  flex: 1;
+  max-width: 500px;
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+  margin-right: 250px; /* aumenta esse valor conforme quiser */
+}
+
+.icons img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}

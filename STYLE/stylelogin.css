@@ -2,7 +2,6 @@ body {
   background: linear-gradient(to left, #B1D3FA, #3D3D3D);
   margin: 0;
   height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -11,11 +10,16 @@ body {
   background: rgba(225, 255, 255, 0.15);
   backdrop-filter: blur(12px);
   padding: 60px;
-  width: 400px;
+  width: 500px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
   text-align: center;
+  margin: 120px auto 0 auto; /* empurra pra baixo e centraliza */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .image {
   width: 90px;
   display: block;
