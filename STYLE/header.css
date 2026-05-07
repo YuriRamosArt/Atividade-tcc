@@ -42,7 +42,8 @@ header {
 }
 
 .menu-icon {
-  font-size: 22px;
+  height: 30px;
+  width: 30px;
   cursor: pointer;
 }
 
@@ -64,14 +65,30 @@ nav a {
   gap: 15px;
 }
 
+.search-box {
+  position: relative;
+  width: 400px;
+
+}
+
 .search-box input {
-  padding: 8px 25px;
+  padding: 8px 25px 8px 40px;
   flex: 1;
   max-width: 500px;
   border-radius: 20px;
   border: none;
   width: 100%;
   margin-right: 250px; /* aumenta esse valor conforme quiser */
+  height: 35px;
+}
+
+.lupa {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .icons img {
