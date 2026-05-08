@@ -19,15 +19,16 @@ body{
     display: flex;
     align-items: center;
     background-color: #FFFF;
-    width: 330px;
-    height: 320px;
+    width: 320px;
+    height: 360px;
     border-radius: 20px;
     margin: 50px;
 }
 
 .coqueteleira{
-    height: 270px;
+    height: 260px;
     margin: 20px;
+    margin-top: -30px;
 }
 
 .descricao_preco_coqueteleira{
@@ -39,5 +40,45 @@ body{
 }
 
 .descricao_coqueteleira{
-    
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 2px;
 }
+
+.preco_coqueteleira{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.carrinho_img{
+    width: 40px;
+    height: 45px;
+    margin-top: 20px;
+}
+
+.carrinho{
+    background-color: #6E6E6E;
+    width: 185px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 27px;
+    font-weight: normal;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    top: 110px;
+    right: 265px;
+    text-align: center;
+    line-height: 37px;
+}
+
+.carrinho_img{
+    width: 40px;
+    height: 45px;
+    position: relative;
+    top: 163px;
+    right: 126px;
+    z-index: 1;
+    margin-left: 5px;
+}
+
