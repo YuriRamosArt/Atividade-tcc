@@ -8,10 +8,10 @@
 header {
   position: fixed;
   top: 0;
-  left: 0; 
   width: 100%;
   z-index: 1000;
 }
+
 
 /* Barra superior */
 .top-bar {
@@ -67,7 +67,7 @@ nav a {
 
 .search-box {
   position: relative;
-  width: 400px;
+  width: 420px;
 
 }
 
