@@ -1,0 +1,8 @@
+body {
+  background: linear-gradient(to left, #B1D3FA, #3D3D3D);
+  margin: 0;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+}
