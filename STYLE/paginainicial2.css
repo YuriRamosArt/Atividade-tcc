@@ -1,8 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
-  background: linear-gradient(to left, #B1D3FA, #3D3D3D);
-  margin: 0;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  padding-top: 90px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrosel {
+    max-width: 400px;
+    overflow: hidden;
+    
+}
+
+.slides {
+    display: flex;
+}
+
+.slides img {
+    display: block;
+    max-width: 100%;
+
 }
