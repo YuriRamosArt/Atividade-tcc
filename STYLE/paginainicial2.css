@@ -6,23 +6,45 @@
 
 body {
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
 }
 
+
 .carrosel {
-    max-width: 400px;
+    width: 100%;
     overflow: hidden;
-    
+    position: relative;
+    height: auto;
+    margin: auto;
 }
 
 .slides {
     display: flex;
+    width: 300%;
+    height: 100%;
 }
 
 .slides img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
     display: block;
-    max-width: 100%;
+}
 
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+}
+
+.esquerda {
+    left: 10px;
+}
+
+.direita{
+    right: 10px;
 }
