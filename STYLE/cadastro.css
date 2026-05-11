@@ -12,11 +12,13 @@ body {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(12px); 
   padding: 60px;
-  width: 400px;
+  width: 460px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   text-align: center;
   padding-top: 120px;
+  margin: 120px auto 0 auto; /* empurra pra baixo e centraliza */
+  margin-top: 15px;
 }
 
 .card h2{
