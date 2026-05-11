@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 *{
     margin: 0;
     padding: 0;
@@ -10,75 +9,123 @@ body{
     height: 100vh;
 }
 
-.acessorios_png{
-    margin: 29px;
-    width: 30rem;
+.acessorios{
+    margin: 30px;
+    height: 100px;
 }
 
 .card_coqueteleira{
-    display: flex;
-    align-items: center;
-    background-color: #FFFF;
-    width: 320px;
-    height: 360px;
+    width: 310px;
+    height: 400px;
+    background-color: #fff;
     border-radius: 20px;
-    margin: 50px;
+    margin: 40px;
+    display: flex;
 }
 
 .coqueteleira{
-    height: 260px;
-    margin: 20px;
-    margin-top: -30px;
+    width: 170px;
+    height: 290px;
+    margin: 3px;
 }
-
-.descricao_preco_coqueteleira{
+.descricao_coqueteleira{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    font-family: "Inter", sans-serif;
-    text-align: center;
+    justify-content: center;
+    margin-left: 0px;
 }
 
-.descricao_coqueteleira{
-    font-weight: normal;
+.titulo_coqueteleira{
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
-    margin-top: 2px;
+    font-weight: normal;
+    gap: 1px;
 }
 
 .preco_coqueteleira{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
     font-weight: normal;
-    font-size: 20px;
-    margin-top: 2px;
 }
 
-.carrinho_img{
-    width: 40px;
-    height: 45px;
-    margin-top: 20px;
-}
-
-.carrinho{
+.compra_coqueteleira{
     background-color: #6E6E6E;
-    width: 185px;
+    width: 180px;
     height: 50px;
     border-radius: 10px;
     font-size: 27px;
     font-weight: normal;
     font-family: 'Inter', sans-serif;
     position: relative;
-    top: 110px;
-    right: 265px;
+    top: 290px;
+    right: 280px;
     text-align: center;
-    line-height: 37px;
 }
 
-.carrinho_img{
-    width: 40px;
-    height: 45px;
+.carrinho_coqueteleira{
+    width: 43px;
     position: relative;
-    top: 163px;
-    right: 126px;
+    top: 342px;
+    right: 147px;
     z-index: 1;
     margin-left: 5px;
 }
 
+.card_garrafa{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    width: 320px;
+    height: 400px;
+    border-radius: 10px;  
+    margin: 0px;
+}
+
+.garrafa{
+    width: 190px;
+    height: 280px;
+    margin: 3px;
+}
+
+.descricao_garrafa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0px;
+}
+
+.titulo_garrafa{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    gap: 1px;
+}
+
+.preco_garrafa{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.compra_garrafa{
+    background-color: #6E6E6E;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 27px;
+    font-weight: normal;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    top: 130px;
+    right: 280px;
+    text-align: center;
+}
+
+.carrinho_garrafa{
+    width: 43px;
+    position: relative;
+    top: 182px;
+    right: 147px;
+    z-index: 1;
+    margin-left: 5px;
+}

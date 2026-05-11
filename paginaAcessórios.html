@@ -1,41 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acessórios</title>
-    <link rel="stylesheet" href="STYLE/styleAcessórios.css">
+    <title>Página de Acessórios</title>
+    <link rel="stylesheet" href="./STYLE/styleAcessórios.css">
 </head>
 <body>
-    <main class="barrafixa">
-        <ul>
-            <li>
-             <a href="#">categorias</a>
-             <a href="./paginaSuplementos.html">suplementos</a>
-             <a href="#">roupas</a>
-             <a href="./paginaAcessórios.html">acessorios</a>
-            </li>
-        </ul>
-    </main>
-        <section>
-            <img src="./IMAGENS/acessórios.png" alt="Acessórios" class="acessorios_png">
-
+    <!-- Card de Acessórios -->
+    <section><!-- Imagem de Acessórios -->
+        <img class="acessorios" src="IMAGENS/acessórios.png" alt="acessorios">
+        <div class="card_coqueteleira">  <!--Card de coqueteleira-->
             <div>
-                <div class="card_coqueteleira">
-                    <img src="./IMAGENS/coqueteleira.png" alt="coqueteleira" class="coqueteleira">
-                    
-                    <div class="descricao_preco_coqueteleira">
-                        <h1 class="descricao_coqueteleira">DARKLAB- coqueteleira - 900ml</h1>
-                        <p class="preco_coqueteleira">R$69,99</p>
-                    </div>
-                    <div>
-                        <img src="./IMAGENS/carrinho.png" alt="carrinho_img" class="carrinho_img">
-                        <h1 class="carrinho">comprar</h1>
-                    </div>
-                </div>
+                <img class="coqueteleira" src="IMAGENS/coqueteleira.png" alt="coqueteleira">
             </div>
-                
-        </section>
-
+            <div class="descricao_coqueteleira">
+            <h1 class="titulo_coqueteleira">DARKLAB- coqueteleira - 900ml</h1>
+            <p class="preco_coqueteleira">R$69,99</p>
+            </div>
+            <div>
+           <img class="carrinho_coqueteleira" src="./IMAGENS/carrinho.png" alt="carrinho">
+           <h1 class="compra_coqueteleira">comprar</h1>
+            </div>
+        <div>
+        <div class="card_garrafa">  <!--Card de garrafa-->
+            <div>
+                <img class="garrafa" src="IMAGENS/garrafaGrande.png" alt="garrafa">
+            </div>
+            <div class="descricao_garrafa">
+            <h1 class="titulo_garrafa">DARKLAB- garrafa - 500ml</h1>
+            <p class="preco_garrafa">R$39,99</p>
+            </div>
+            <div>
+           <img class="carrinho_garrafa" src="./IMAGENS/carrinho.png" alt="carrinho">
+           <h1 class="compra_garrafa">comprar</h1>
+            </div>
+        </div>
+        </div>
+    </section>
 </body>
 </html>
