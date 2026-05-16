@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: linear-gradient(to right, #F2F3E9 20%, #989897 30%, #999992 40%);
     height: 100vh;
@@ -12,6 +16,8 @@ body{
 .acessorios{
     margin: 30px;
     height: 100px;
+    display: flex;
+    align-items: center;
 }
 
 .card_coqueteleira{
@@ -24,9 +30,9 @@ body{
 }
 
 .coqueteleira{
-    width: 170px;
+    width: 175px;
     height: 290px;
-    margin: 3px;
+    margin: 4px;
 }
 .descricao_coqueteleira{
     display: flex;
@@ -36,6 +42,7 @@ body{
     font-family: 'Inter', sans-serif;
     text-align: center;
     margin-top: 155px;
+    padding: 5px;
 }
 
 .titulo_coqueteleira{
@@ -377,4 +384,23 @@ body{
     right: 140px;
     z-index: 1;
     margin-left: 5px;
+}
+button{
+    background-color: transparent;
+    border: 2px solid #989890;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #6E6E6E;
+    color: #fff;
+    transition: 0.3s;
+}
+.titulos:hover{
+    color: #6E6E6E;
+    transition: 0.3s;
+}
+.precos:hover{
+    color: #6E6E6E;
+    transition: 0.3s;
+    
 }
