@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -9,398 +10,105 @@ html{
 }
 
 body{
+    min-height: 100vh;
     background: linear-gradient(to right, #F2F3E9 20%, #989897 30%, #999992 40%);
-    height: 100vh;
+    font-family: 'Inter', sans-serif;
 }
 
-.acessorios{
+.acessorios_img{
     margin: 30px;
     height: 100px;
     display: flex;
-    align-items: center;
 }
 
-.card_coqueteleira{
+.acessorios_img:hover{
+    color: #312d2d;
+    transition: 0.3s;
+    transform: translateY(-10px);
+    border-color: #111111;
+}
+
+.container-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 30px;
+    justify-items: center;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    flex-direction: start;
+    gap: 20px;
+    background-color: #e9e7e7;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
     width: 310px;
-    height: 400px;
-    background-color: #fff;
+    height: 380px;
     border-radius: 20px;
-    margin: 40px;
-    display: flex;
+    padding: 15px;
+    transition: 0.3s;
 }
 
-.coqueteleira{
-    width: 175px;
-    height: 290px;
-    margin: 4px;
-}
-.descricao_coqueteleira{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-    margin-top: 155px;
-    padding: 5px;
+.cards:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px #616161;
 }
 
-.titulo_coqueteleira{
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    gap: 1px;
-}
-
-.preco_coqueteleira{
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    font-weight: normal;
-}
-
-.compra_coqueteleira{
-    background-color: #6E6E6E;
-    width: 180px;
-    height: 50px;
-    border-radius: 10px;
-    font-size: 27px;
-    font-weight: normal;
-    font-family: 'Inter', sans-serif;
-    position: relative;
-    top: 290px;
-    right: 280px;
-    text-align: center;
-}
-
-.carrinho_coqueteleira{
-    width: 43px;
-    position: relative;
-    top: 342px;
-    right: 147px;
-    z-index: 1;
-    margin-left: 5px;
-}
-
-.card_garrafa{
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    width: 320px;
-    height: 400px;
-    border-radius: 10px;  
-    margin: 0px;
-}
-
-.garrafa{
-    width: 190px;
-    height: 280px;
-    margin: 3px;
-}
-
-.descricao_garrafa{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-}
-
-.titulo_garrafa{
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    gap: 1px;
-}
-
-.preco_garrafa{
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    font-weight: normal;
-}
-
-.compra_garrafa{
-    background-color: #6E6E6E;
-    width: 180px;
-    height: 50px;
-    border-radius: 10px;
-    font-size: 27px;
-    font-weight: normal;
-    font-family: 'Inter', sans-serif;
-    position: relative;
-    top: 130px;
-    right: 280px;
-    text-align: center;
-}
-
-.carrinho_garrafa{
-    width: 43px;
-    position: relative;
-    top: 182px;
-    right: 147px;
-    z-index: 1;
-    margin-left: 5px;
-}
-
-.card_mochila{
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    width: 320px;
-    height: 400px;
-    border-radius: 10px;  
-    margin: 0px;
-}
-
-.mochila{
-    width: 230px;
-    height: 280px;
-    margin: -5px;
-}
-
-.descricao_mochila{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-}
-
-.titulo_mochila{
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    gap: 1px;
-}
-
-.preco_mochila{
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    font-weight: normal;
-}
-
-.compra_mochila{
-    background-color: #6E6E6E;
-    width: 180px;
-    height: 50px;
-    border-radius: 10px;
-    font-size: 27px;
-    font-weight: normal;
-    font-family: 'Inter', sans-serif;
-    position: relative;
-    top: 130px;
-    right: 300px;
-    text-align: center;
-}
-
-.carrinho_mochila{
-    width: 43px;
-    position: relative;
-    top: 180px;
-    right: 170px;
-    z-index: 1;
-    margin-left: 5px;
-}
-
-.card_bone{
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    width: 320px;
-    height: 400px;
-    border-radius: 10px;  
-    margin: 37px;
-}
-
-.bone{
-    width: 190px;
+.produto{
+    width: 160px;
     height: 220px;
-    margin: 3px;
+    object-fit: contain;
+    transition: 0.3s;
+    filter: drop-shadow(0 0 8px #302f2f);
 }
 
-.descricao_bone{
+
+.descricao{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    font-family: 'Inter', sans-serif;
-    text-align: center;
+    flex-direction: column;   
+    gap: 15px;
 }
 
-.titulo_bone{
-    font-family: 'Inter', sans-serif;
+.titulo{
+    font-size: 24px;
+    font-weight: normal;
+    color: #000000;
+}
+.preco{
     font-size: 20px;
-    font-weight: normal;
-    gap: 1px;
 }
 
-.preco_bone{
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    font-weight: normal;
-}
 
-.compra_bone{
-    background-color: #6E6E6E;
-    width: 180px;
-    height: 50px;
-    border-radius: 10px;
-    font-size: 27px;
-    font-weight: normal;
-    font-family: 'Inter', sans-serif;
-    position: relative;
-    top: 130px;
-    right: 300px;
-    text-align: center;
-}
-
-.carrinho_bone{
-    width: 43px;
-    position: relative;
-    top: 180px;
-    right: 170px;
-    z-index: 1;
-    margin-left: 5px;
-}
-
-.card_elastico{
+.compra-area{
     display: flex;
     align-items: center;
-    background-color: #fff;
-    width: 330px;
-    height: 380px;
-    border-radius: 10px;
-    margin: -22px;
+    gap: 10px;
 }
-
-.elastico{
-    width: 190px;
-    height: 185px;
-    margin: 3px;
-}
-
-.descricao_elastico{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-}
-
-.titulo_elastico{
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    gap: 1px;
-}
-
-.preco_elastico{
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    font-weight: normal;
-}
-
-.compra_elastico{
-    background-color: #6E6E6E;
-    width: 180px;
-    height: 50px;
-    border-radius: 10px;
-    font-size: 27px;
-    font-weight: normal;
-    font-family: 'Inter', sans-serif;
+.compra{
+    background-color: #989897;
     position: relative;
-    top: 130px;
-    right: 300px;
-    text-align: center;
+    height: 55px;
+    width: 160px;
+    border-radius: 20px;
+    border: none;
+    font-size: 25px;
+    left: -60px;
+    top: 70px;
+}
+.compra:hover{
+    background-color: #757171;
+    color: #ffffff;
+    transition: 0.3s;
+}
+.carrinho{
+    width: 45px;
+    position: absolute;
+    right: 0px;
+    top: 6px;
 }
 
-.carrinho_elastico{
-    width: 43px;
-    position: relative;
-    top: 180px;
-    right: 170px;
-    z-index: 1;
-    margin-left: 5px;
-}
-
-.card_strap{
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    width: 330px;
-    height: 380px;
-    border-radius: 10px;
-    margin: -22px;
-}
-
-.strap{
-    width: 220px;
-    height: 185px;
-    margin: 3px;
-}
-
-.descricao_strap{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-}
-
-.titulo_strap{
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    gap: 1px;
-}
-
-.preco_strap{
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    font-weight: normal;
-}
-
-.compra_strap{
-    background-color: #6E6E6E;
-    width: 180px;
-    height: 50px;
-    border-radius: 10px;
-    font-size: 27px;
-    font-weight: normal;
-    font-family: 'Inter', sans-serif;
-    position: relative;
-    top: 130px;
-    right: 270px;
-    text-align: center;
-}
-
-.carrinho_strap{
-    width: 43px;
-    position: relative;
-    top: 180px;
-    right: 140px;
-    z-index: 1;
-    margin-left: 5px;
-}
 button{
-    background-color: transparent;
-    border: 2px solid #989890;
-    cursor: pointer;
-}
-button:hover{
-    background-color: #6E6E6E;
-    color: #fff;
+    cursor: pointer; 
     transition: 0.3s;
-}
-.titulos:hover{
-    color: #6E6E6E;
-    transition: 0.3s;
-}
-.precos:hover{
-    color: #6E6E6E;
-    transition: 0.3s;
-    
 }
