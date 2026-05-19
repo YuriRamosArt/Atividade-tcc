@@ -71,7 +71,7 @@ body{
 }
 
 .titulo{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: normal;
     color: #000000;
 }
@@ -86,14 +86,15 @@ body{
     gap: 10px;
 }
 .compra{
+    font-weight: 600;
     background-color: #989897;
     position: relative;
     height: 55px;
     width: 160px;
     border-radius: 20px;
     border: none;
-    font-size: 25px;
-    left: -60px;
+    font-size: 20px;
+    left: -55px;
     top: 70px;
 }
 .compra:hover{
@@ -102,9 +103,9 @@ body{
     transition: 0.3s;
 }
 .carrinho{
-    width: 45px;
+    width: 40px;
     position: absolute;
-    right: 0px;
+    right: -7px;
     top: 6px;
 }
 
