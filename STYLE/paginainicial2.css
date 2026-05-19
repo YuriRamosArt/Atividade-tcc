@@ -36,8 +36,8 @@ body {
 }
 
 .slides img {
-    margin-top: 95px;
-    height: auto;
+    
+    height: 900px;
     object-fit: contain;
     flex-shrink: 0;
     display: block;
