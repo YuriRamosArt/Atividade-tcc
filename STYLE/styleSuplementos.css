@@ -5,8 +5,9 @@
 }
 
 body{
-    background: linear-gradient(to left, #F2F3E9 20%, #989897 30%, #999992 40%);
-    height: 100vh;
+    min-height: 100vh;
+    background: linear-gradient(to right, #F2F3E9 20%, #989897 30%, #999992 40%);
+    font-family: 'Inter', sans-serif;
 }
 
 .suplementos_png{
