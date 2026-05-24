@@ -18,19 +18,24 @@ body{
     min-height: 100vh;
     background: linear-gradient(to right, #F2F3E9 20%, #989897 30%, #999992 40%);
     font-family: 'Inter', sans-serif;
+    background: radial-gradient(
+    circle at top,
+    #3f58e4 0%,
+    #091930 35%,
+    #0F2B46 70%,
+    #000000 140%
+);
 }
 
-.suplementos_img{
-    margin: 30px;
-    height: 100px;
+.banner{
     display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    font-size: 35px;
 }
-
-.suplementos_img:hover{
-    color: #312d2d;
-    transition: 0.3s;
-    transform: translateY(-10px);
-    border-color: #111111;
+.metadeBanner{
+    color: #0b0a77;
 }
 
 .container-cards{
@@ -57,7 +62,7 @@ body{
 
 .cards:hover{
     transform: translateY(-10px);
-    box-shadow: 0 0 10px #636363;
+    box-shadow: 0 0 10px #06deee;
 }
 
 .produto{
