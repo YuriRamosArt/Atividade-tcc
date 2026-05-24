@@ -18,7 +18,10 @@ body {
   text-align: center;
   padding-top: 120px;
   margin: 120px auto 0 auto; /* empurra pra baixo e centraliza */
+<<<<<<< Updated upstream
   margin-top: 15px;
+=======
+>>>>>>> Stashed changes
 }
 
 .card h2{
