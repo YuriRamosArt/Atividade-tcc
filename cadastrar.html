@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="STYLE/header.css">
-    <link rel="stylesheet" href="STYLE/recuperarsenha.css">
-    <title>Recuperar senha</title>
+    <link rel="stylesheet" href="STYLE/cadastro.css">
+    <title>Cadastrar</title>
 </head>
 <body>
-     <header>
+  <header>
      <div class="top-bar">
       frete gratis
     </div>
@@ -39,14 +39,34 @@
 </body>
 <body>
     <div class="card">
-        <h2>Recuperar senha</h2>
-        <p>Digite seu email para receber o link de recuperação.</p>
-       
-        <input type="email" placeholder="Seu email">
-        <button>Enviar</button>
+        <h2>Cadastrar</h2>
+        <form>
+            <div class="input-group">
+                <label>Nome</label>
+                <input type="text" placeholder="Seu nome">
+            </div>
+            
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="Seu email">
+            </div>
 
-        <a href="login.html" class="voltar">Cancelar</a>
+            <div class="input-group">
+                <label>Senha</label>
+                <input type="password" placeholder="Crie uma senha">
+            </div>
 
+            <div class="input-group">
+                <label>Confirmar senha</label>
+                <input type="password" placeholder="Repita a senha">
+            </div>
+
+            <button>Cadastrar</button>
+        </form>
+
+        <div class="login-link">
+            Já tem uma conta? <a href="login.html">Entrar</a>
+        </div>
     </div>
 </body>
 </html>
