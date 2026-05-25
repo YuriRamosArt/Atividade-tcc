@@ -12,6 +12,7 @@ header {
   z-index: 1000;
 }
 
+
 /* Barra superior */
 .top-bar {
   background: black;
@@ -26,11 +27,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to right, #BEE6FF, #709AB3, #181818);
+  background: linear-gradient(to right, #BEE6FF,#709AB3, #181818);
   padding: 10px 20px;
   overflow: hidden;
   height: 70px;
 }
+
 
 /* Lado esquerdo */
 .left {
@@ -66,6 +68,7 @@ nav a {
 .search-box {
   position: relative;
   width: 420px;
+
 }
 
 .search-box input {
@@ -89,8 +92,8 @@ nav a {
 }
 
 .icons img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
   cursor: pointer;
 }
