@@ -1,41 +1,163 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acessórios</title>
-    <link rel="stylesheet" href="STYLE/styleAcessórios.css">
+    <title>Página de Acessórios</title>
+    <link rel="stylesheet" href="STYLE/header.css">
+    <link rel="stylesheet" href="./STYLE/styleAcessórios.css">
 </head>
 <body>
-    <main class="barrafixa">
-        <ul>
-            <li>
-             <a href="#">categorias</a>
-             <a href="./paginaSuplementos.html">suplementos</a>
-             <a href="#">roupas</a>
-             <a href="./paginaAcessórios.html">acessorios</a>
-            </li>
-        </ul>
-    </main>
-        <section>
-            <img src="./IMAGENS/acessórios.png" alt="Acessórios" class="acessorios_png">
+    <!-- Banner -->
+    <section class="banner">
+        <img class="acessorios_img" src="./IMAGENS/acessórios.png" alt="Acessórios">
+    </section>
 
-            <div>
-                <div class="card_coqueteleira">
-                    <img src="./IMAGENS/coqueteleira.png" alt="coqueteleira" class="coqueteleira">
-                    
-                    <div class="descricao_preco_coqueteleira">
-                        <h1 class="descricao_coqueteleira">DARKLAB- coqueteleira - 900ml</h1>
-                        <p class="preco_coqueteleira">R$69,99</p>
-                    </div>
-                    <div>
-                        <img src="./IMAGENS/carrinho.png" alt="carrinho_img" class="carrinho_img">
-                        <h1 class="carrinho">comprar</h1>
-                    </div>
+    <!-- Produtos -->
+    <section class="container-cards">
+
+        <!-- Card -->
+        <div class="cards">
+
+            <img class="produto imgC" src="./IMAGENS/coqueteleira.png" alt="Coqueteleira">
+
+            <div class="descricao">
+                <h1 class="titulo">DARKLAB - Coqueteleira 900ml</h1>
+                <p class="preco">R$69,99</p>
+            
+                <div class="area-compra">
+
+                    <button class="compra" onclick="comprar('coqueteleira')">
+
+                        <img class="carrinho" src="./IMAGENS/carrinho.png" alt="Carrinho">
+
+                        Comprar
+                    </button>
                 </div>
+                    
             </div>
-                
-        </section>
+
+        </div>
+
+        <!-- Card -->
+        <div class="cards">
+
+            <img class="produto imgG" src="./IMAGENS/garrafaGrande.png" alt="Garrafa">
+
+            <div class="descricao">
+                <h1 class="titulo">DARKLAB - Garrafa 500ml</h1>
+                <p class="preco">R$39,99</p>
+            
+                <div class="area-compra">
+
+                    <button class="compra" onclick="comprar('garrafa')">
+
+                            <img class="carrinho" src="IMAGENS/carrinhodecompras.png" alt="Carrinho">
+
+                        Comprar
+                    </button>
+                </div>
+                    
+            </div>
+
+        </div>
+
+        <!-- Card -->
+        <div class="cards">
+
+            <img class="produto imgM" src="./IMAGENS/mochilaG.png" alt="Mochila">
+
+            <div class="descricao">
+                <h1 class="titulo">GROWT - Mochila <br>Média</h1>
+                <p class="preco">R$149,99</p>
+
+                <div class="area-compra">
+
+                    <button class="compra" onclick="comprar('mochila')">
+
+                        <img class="carrinho" src="./IMAGENS/carrinho.png" alt="Carrinho">
+
+
+                        Comprar
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Card -->
+        <div class="cards">
+
+            <img class="produto imgB" src="./IMAGENS/bone.png" alt="Boné">
+
+            <div class="descricao">
+                <h1 class="titulo">SHARKPRO - Boné</h1>
+                <p class="preco">R$49,99</p>
+
+                <div class="area-compra">
+                    
+                    <button class="compra" onclick="comprar('bone')">
+
+                        <img class="carrinho" src="./IMAGENS/carrinho.png" alt="Carrinho">
+
+
+                        Comprar
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Card -->
+        <div class="cards">
+
+            <img class="produto imgE" src="./IMAGENS/elastico.png" alt="Elástico">
+
+            <div class="descricao">
+                <h1 class="titulo">SHARKPRO - Elástico</h1>
+                <p class="preco">R$29,99</p>
+            
+                <div class="area-compra">
+                   
+                    <button class="compra" onclick="comprar('elastico')">
+
+                        <img class="carrinho" src="./IMAGENS/carrinho.png" alt="Carrinho">
+
+
+                        Comprar
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Card -->
+        <div class="cards">
+
+            <img class="produto imgS" src="./IMAGENS/strap.png" alt="Strap">
+
+            <div class="descricao">
+                <h1 class="titulo">DARKLAB - Strap 1 Par</h1>
+                <p class="preco">R$29,99</p>
+            
+                <div class="area-compra">
+
+                    <button class="compra" onclick="comprar('strap')">
+
+                        <img class="carrinho" src="" alt="Carrinho">
+
+                        Comprar
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
 
 </body>
 </html>

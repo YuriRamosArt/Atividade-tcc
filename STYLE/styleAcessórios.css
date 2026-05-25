@@ -1,84 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+:root{
+    --var-cor-do-carrinho: linear-gradient(to right, #BEE6FF,#709AB3, #181818);;
+}
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
-    background: linear-gradient(to left, #F2F3E9 20%, #989897 30%, #999992 40%);
-    height: 100vh;
+    min-height: 100vh;
+    background: linear-gradient(to right, #F2F3E9 20%, #989897 30%, #999992 40%);
+    font-family: 'Inter', sans-serif;
 }
 
-.acessorios_png{
-    margin: 29px;
-    width: 30rem;
+.acessorios_img{
+    margin: 30px;
+    height: 100px;
+    display: flex;
 }
 
-.card_coqueteleira{
+.acessorios_img:hover{
+    color: #312d2d;
+    transition: 0.3s;
+    transform: translateY(-10px);
+    border-color: #111111;
+}
+
+.container-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 50px;
+    justify-items: center;
+}
+
+.cards{
     display: flex;
     align-items: center;
-    background-color: #FFFF;
-    width: 320px;
-    height: 360px;
+    flex-direction: start;
+    gap: 20px;
+    background-color: #e9e7e7;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    width: 410px;
+    height: 380px;
     border-radius: 20px;
-    margin: 50px;
+    padding: 15px;
+    transition: 0.3s;
 }
 
-.coqueteleira{
-    height: 260px;
-    margin: 20px;
-    margin-top: -30px;
+.cards:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px #636363;
 }
 
-.descricao_preco_coqueteleira{
+.produto{
+    width: 160px;
+    height: 220px;
+    object-fit: contain;
+    transition: 0.3s;
+    filter: drop-shadow(0 0 8px #302f2f);
+}
+
+
+.descricao{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    font-family: "Inter", sans-serif;
-    text-align: center;
+    flex-direction: column;   
+    gap: 15px;
 }
 
-.descricao_coqueteleira{
-    font-weight: normal;
+.titulo{
     font-size: 20px;
-    margin-top: 2px;
-}
-
-.preco_coqueteleira{
     font-weight: normal;
+    color: #000000;
+}
+.preco{
     font-size: 20px;
-    margin-top: 2px;
 }
 
-.carrinho_img{
-    width: 40px;
-    height: 45px;
-    margin-top: 20px;
-}
 
+.compra-area{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.compra{
+    font-weight: 600;
+    background: linear-gradient(to right, #BEE6FF,#709AB3, #181818);;
+    position: relative;
+    height: 55px;
+    width: 160px;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    left: -30px;
+    top: 70px;
+}
+.compra:hover{
+    background-color: #b8e7ff;
+    
+    color: #ffffff;
+    transition: 0.3s;
+}
 .carrinho{
-    background-color: #6E6E6E;
-    width: 185px;
-    height: 50px;
-    border-radius: 10px;
-    font-size: 27px;
-    font-weight: normal;
-    font-family: 'Inter', sans-serif;
-    position: relative;
-    top: 110px;
-    right: 265px;
-    text-align: center;
-    line-height: 37px;
-}
-
-.carrinho_img{
     width: 40px;
-    height: 45px;
-    position: relative;
-    top: 163px;
-    right: 126px;
-    z-index: 1;
-    margin-left: 5px;
+    position: absolute;
+    right: -7px;
+    top: 6px;
 }
 
+button{
+    cursor: pointer; 
+    transition: 0.3s;
+}
