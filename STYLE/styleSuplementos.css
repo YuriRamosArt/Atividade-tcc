@@ -16,15 +16,9 @@ html{
 
 body{
     min-height: 100vh;
-    background: linear-gradient(to right, #F2F3E9 20%, #989897 30%, #999992 40%);
+    background: linear-gradient(to left, #F2F3E9 20%, #989897 30%, #999992 40%);
+    opacity: 14.4px;
     font-family: 'Inter', sans-serif;
-    background: radial-gradient(
-    circle at top,
-    #3f58e4 0%,
-    #091930 35%,
-    #0F2B46 70%,
-    #000000 140%
-);
 }
 
 .banner{
@@ -35,7 +29,12 @@ body{
     font-size: 35px;
 }
 .metadeBanner{
-    color: #0b0a77;
+    color: #f2f3e9e3;
+}
+.banner:hover{
+    transition: 0.3s;
+    transform: translateY(-10px);
+    color: #302f2f;
 }
 
 .container-cards{
@@ -62,7 +61,7 @@ body{
 
 .cards:hover{
     transform: translateY(-10px);
-    box-shadow: 0 0 10px #06deee;
+    box-shadow: 0 0 10px #3b3b34;
 }
 
 .produto{
@@ -97,7 +96,7 @@ body{
 }
 .compra{
     font-weight: 600;
-    background: linear-gradient(to right, #BEE6FF,#709AB3, #181818);;
+    background: linear-gradient(to left, #BEE6FF,#709AB3, #181818);;
     position: relative;
     height: 55px;
     width: 160px;
@@ -116,7 +115,7 @@ body{
 .carrinho{
     width: 40px;
     position: absolute;
-    right: -7px;
+    right: -1px;
     top: 6px;
 }
 
