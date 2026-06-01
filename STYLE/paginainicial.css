@@ -29,11 +29,13 @@ body {
 
 .slides img {   
     height: 900px;
+    width: 1080px;
     object-fit: contain;
     flex-shrink: 0;
     display: block;
-    width: calc(100% / 3);
+    
     margin-bottom: 20px;
+    margin-top: 90px;
 }
 
 button {
