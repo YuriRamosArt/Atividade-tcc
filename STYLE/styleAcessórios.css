@@ -20,17 +20,15 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
-.acessorios_img{
-    margin: 30px;
-    height: 100px;
+.banner{
     display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    font-size: 35px;
 }
-
-.acessorios_img:hover{
-    color: #312d2d;
-    transition: 0.3s;
-    transform: translateY(-10px);
-    border-color: #111111;
+.metadeBanner{
+    color: #0b0a77;
 }
 
 .container-cards{
@@ -57,7 +55,7 @@ body{
 
 .cards:hover{
     transform: translateY(-10px);
-    box-shadow: 0 0 10px #636363;
+    box-shadow: 0 0 10px #447ec9;
 }
 
 .produto{
@@ -103,15 +101,14 @@ body{
     top: 70px;
 }
 .compra:hover{
-    background-color: #b8e7ff;
-    
+    background-color: #b8e7ff;   
     color: #ffffff;
     transition: 0.3s;
 }
 .carrinho{
-    width: 40px;
+    width: 37px;
     position: absolute;
-    right: -7px;
+    right: -3px;
     top: 6px;
 }
 
