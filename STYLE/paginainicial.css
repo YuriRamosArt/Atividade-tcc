@@ -5,43 +5,4 @@
 }
 
 body{
-    overflow-x: hidden;
-}
-
-.carrosel{
-    width: 100%;
-    height: 200px;
-    position: relative;
-    overflow: hidden;
-}
-
-.slides{
-    width: 100%;
-    height: 200px;
-}
-
-.slides img{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-}
-
-button{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: none;
-    font-size: 40px;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.esquerda{
-    left: 10px;
-}
-
-.direita{
-    right: 10px;
-}
+ 
