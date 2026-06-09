@@ -18,13 +18,6 @@ body{
     min-height: 100vh;
     background: linear-gradient(to right, #F2F3E9 20%, #989897 30%, #999992 40%);
     font-family: 'Inter', sans-serif;
-    background: radial-gradient(
-    circle at top,
-    #3f58e4 0%,
-    #091930 35%,
-    #0F2B46 70%,
-    #000000 140%
-);
 }
 
 .banner{
