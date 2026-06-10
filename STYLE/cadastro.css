@@ -83,7 +83,7 @@ button {
 
 .login-link {
   margin-top: 15px;
-  font-size: 17px;
+  font-size: 13px;
 }
 
 .login-link a {
@@ -93,4 +93,5 @@ button {
 
 .login-link a:hover {
   text-decoration: underline;
+  color: #004697;
 }
