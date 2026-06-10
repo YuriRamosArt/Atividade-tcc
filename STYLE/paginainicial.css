@@ -13,8 +13,7 @@ body{
     height: auto;
     margin-top: 60px;
 }
-
-button {
+.buttonbanner {
     position: absolute;
     top: 45%;
     transform: translateY(-45%);
@@ -26,12 +25,76 @@ button {
     font-size: 15px;
     cursor: pointer;
 }
-
-.esquerda{
+.esquerda {
     left: 10px;
-    border-color: none;
+}
+.direita {
+    right: 10px;
 }
 
-.direita{
-    right: 10px;
+.produtos{
+    background: #d9d9d9;
+    padding: 30px;
+}
+
+.produtos h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.cards{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: white;
+    width: 280px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+}
+
+.card h3{
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.estrelas{
+    color: gold;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.preco-antigo{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.preco{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.preco span{
+    font-size: 18px;
+}
+
+.card button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right,#c7e5ff,#4d6b80);
+    font-size: 18px;
+    cursor: pointer;
 }
