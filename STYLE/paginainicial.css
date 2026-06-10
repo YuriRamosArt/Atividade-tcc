@@ -5,4 +5,11 @@
 }
 
 body{
- 
+}
+
+.banner img {
+    position: relative; /*para que o elemento continue em sua posição original sem afetar nada ao redor*/
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+}
