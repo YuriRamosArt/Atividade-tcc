@@ -127,7 +127,8 @@ nav a {
 
 body{
     min-height: 100vh;
-    background: linear-gradient(to right, #F2F3E9 20%, #989897 30%, #999992 40%);
+    background: linear-gradient(to left, #F2F3E9 20%, #989897 30%, #999992 40%);
+    opacity: 14.4px;
     font-family: 'Inter', sans-serif;
 }
 
@@ -171,7 +172,7 @@ body{
 
 .cards:hover{
     transform: translateY(-10px);
-    box-shadow: 0 0 10px #447ec9;
+    box-shadow: 0 0 10px #3b3b34;
 }
 
 .produto{
