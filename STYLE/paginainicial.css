@@ -69,6 +69,10 @@ body{
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     cursor: pointer;
 }
+.card:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
 
 .card img{
     width: 100%;
@@ -110,4 +114,8 @@ body{
     background: linear-gradient(to right,#c7e5ff,#4d6b80);
     font-size: 18px;
     cursor: pointer;
+}
+.card button:hover{
+    background: linear-gradient(to right,#4d6b80,#c7e5ff);
+    transition: 0.3s;
 }
