@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Suplementos</title>
+
+    <link rel="stylesheet" href="./STYLE/styleSuplementos.css">
+</head>
+    <header>
+    <div class="top-bar">
+      frete gratis
+    </div>
+
+    <div class="main-header">
+      <div class="left">
+        <img src="./IMAGENS/Logo.png" class="logo">
+        <img src="./IMAGENS/MENU.png" class="menu-icon">
+
+        <nav>
+          <a href="./paginaAcessórios.html" class="pag">acessórios</a>
+          <a href="#" class="pag">roupas</a>
+          <a href="./paginaSuplementos.html" class="pag">suplementos</a>
+        </nav>
+      </div>
+
+      <div class="right">
+        <div class="search-box">
+          <img src="./IMAGENS/Search.png" class="lupa">
+          <input type="text" placeholder="Pesquisar...">
+        </div>
+
+        <div class="icons">
+          <img src="./IMAGENS/carrinho-de-compras.png" class="icon">
+          <a href="login.html">
+          <img src="./IMAGENS/LOGIN.png" class="icon">
+          </a>
+        </div>
+    </header>
+
+<body>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h1>SUPLE<span class="metadeBanner">MENTOS</span></h1>
+    </section>
+
+    <!-- Produtos -->
+    <section class="container-cards">
+
+        <!-- Card -->
+        <div class="cards">
+
+            <img class="produto imgC" src="./IMAGENS/wheyMax.png" alt="Whey Max">
+
+            <div class="descricao">
+                <h1 class="titulo">MAXWHEY baunilha - 900 g </h1>
+                <p class="preco">R$90,99</p>
+            
+                <div class="area-compra">
+
+                      <div class="quantidade">
+                        <button onclick="diminuir()">-</button>
+                        <input type="text" value="1">
+                        <button onclick="aumentar()">+</button>
+                    </div>
+
+                    <button class="compra" onclick="comprar('wheyMax')">
+
+                        <img class="carrinho" src="./IMAGENS/carrinho.png" alt="Carrinho">
+
+                        Comprar
+                    </button>
+                </div>
+                    
+            </div>
+
+        </div>
+
+        <!-- Card -->
+        <div class="cards">
+
+            <img class="produto imgG" src="./IMAGENS/wheyFresh.png" alt="Whey Fresh">
+
+            <div class="descricao">
+                <h1 class="titulo">FRESHWHEY chocolate e avelã- pote 900 g</h1>
+                <p class="preco">R$110,99</p>
+            
+                <div class="area-compra">
+
+                    <div class="quantidade">
+                        <button onclick="diminuir()">-</button>
+                        <input type="text" value="1">
+                        <button onclick="aumentar()">+</button>
+                    </div>
+
+                    <button class="compra" onclick="comprar('wheyFresh')">
+
+                            <img class="carrinho" src="./IMAGENS/carrinho.png" alt="Carrinho">
+
+                        Comprar
+                    </button>
+                </div>
+                    
+            </div>
+
+        </div>
+
+        <!-- Card -->
+        <div class="cards">
+
+            <img class="produto imgM" src="./IMAGENS/creatina.png" alt="Creatina">
+
+            <div class="descricao">
+                <h1 class="titulo">DARKLAB creatina - 350 g </h1>
+                <p class="preco">R$49,99</p>
+
+                <div class="area-compra">
+
+                    <div class="quantidade">
+                        <button onclick="diminuir()">-</button>
+                        <input type="text" value="1">
+                        <button onclick="aumentar()">+</button>
+                    </div>
+
+                    <button class="compra" onclick="comprar('creatina')">
+
+                        <img class="carrinho" src="./IMAGENS/carrinho.png" alt="Carrinho">
+
+
+                        Comprar
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Card -->
+        <div class="cards">
+
+            <img class="produto imgB" src="./IMAGENS/cafeina.png" alt="Caféina">
+
+            <div class="descricao">
+                <h1 class="titulo">GROWTH-cafeína         200mg</h1>
+                <p class="preco">R$49,99</p>
+
+                <div class="area-compra">
+
+                    <div class="quantidade">
+                        <button onclick="diminuir()">-</button>
+                        <input type="text" value="1">
+                        <button onclick="aumentar()">+</button>
+                    </div>
+                    
+                    <button class="compra" onclick="comprar('cafeina')">
+
+                        <img class="carrinho" src="./IMAGENS/carrinho.png" alt="Carrinho">
+
+
+                        Comprar
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Card -->
+        <div class="cards">
+
+            <img class="produto imgE" src="./IMAGENS/dark_raze.png" alt="Dark Raze">
+
+            <div class="descricao">
+                <h1 class="titulo">DARKLAB raze prétreino - 350g</h1>
+                <p class="preco">R$59,99</p>
+            
+                <div class="area-compra">
+
+                    <div class="quantidade">
+                        <button onclick="diminuir()">-</button>
+                        <input type="text" value="1">
+                        <button onclick="aumentar()">+</button>
+                    </div>
+                   
+                    <button class="compra" onclick="comprar('raze')">
+
+                        <img class="carrinho" src="./IMAGENS/carrinho.png" alt="Carrinho">
+
+
+                        Comprar
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Card -->
+        <div class="cards">
+
+            <img class="produto imgS" src="./IMAGENS/wheyFreshMorango.png" alt="whey Fresh Morango">
+
+            <div class="descricao">
+                <h1 class="titulo">FRESHWHEY frutas vermelhas - pote 900 g</h1>
+                <p class="preco">R$110,99</p>
+            
+                <div class="area-compra">
+
+                    <div class="quantidade">
+                        <button onclick="diminuir()">-</button>
+                        <input type="text" value="1">
+                        <button onclick="aumentar()">+</button>
+                    </div>
+
+                    <button class="compra" onclick="comprar('wheyFreshMorango')">
+
+                        <img class="carrinho" src="./IMAGENS/carrinho.png" alt="Carrinho">
+
+                        Comprar
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
