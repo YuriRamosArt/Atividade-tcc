@@ -9,10 +9,6 @@ body{
     background: #fff;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
 .banner img {
     position: relative; /*para que o elemento continue em sua posição original sem afetar nada ao redor*/
     width: 100%;
@@ -63,7 +59,6 @@ html{
     gap: 30px;
     justify-content: center;
     flex-wrap: wrap;
-      transition: 0.3s;
 }
 
 .card{
@@ -73,11 +68,6 @@ html{
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     cursor: pointer;
-}
-
-.cards:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 0 10px #06deee;
 }
 
 .card img{
