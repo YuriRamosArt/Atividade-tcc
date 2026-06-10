@@ -116,13 +116,17 @@ body{
 .banner{
     display: flex;
     align-items: center;
-    margin-top: 80px;
     gap: 20px;
     padding: 20px;
     font-size: 35px;
+    margin-top: 80px;
 }
 .metadeBanner{
-    color: #0b0a77;
+    color: #f2f3e9e3;
+}
+.banner:hover{
+    transition: 0.3s;
+    color: #302f2f;
 }
 
 .container-cards{
