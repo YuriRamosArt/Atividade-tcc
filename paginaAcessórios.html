@@ -4,13 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Acessórios</title>
-    <link rel="stylesheet" href="STYLE/header.css">
     <link rel="stylesheet" href="./STYLE/styleAcessórios.css">
 </head>
+    <header>
+    <div class="top-bar">
+      frete gratis
+    </div>
+
+    <div class="main-header">
+      <div class="left">
+        <img src="./IMAGENS/Logo.png" class="logo">
+        <img src="./IMAGENS/MENU.png" class="menu-icon">
+
+        <nav>
+          <a href="./paginainicial2.html" class="pag">inicio</a>
+          <a href="./paginaAcessórios.html" class="pag">acessórios</a>
+          <a href="#" class="pag">roupas</a>
+          <a href="./paginaSuplementos.html" class="pag">suplementos</a>
+        </nav>
+      </div>
+
+      <div class="right">
+        <div class="search-box">
+          <img src="./IMAGENS/Search.png" class="lupa">
+          <input type="text" placeholder="Pesquisar...">
+        </div>
+
+        <div class="icons">
+          <img src="./IMAGENS/carrinho-de-compras.png" class="icon">
+          <a href="login.html">
+          <img src="./IMAGENS/LOGIN.png" class="icon">
+          </a>
+        </div>
+    </header>
+
 <body>
     <!-- Banner -->
     <section class="banner">
-        <img class="acessorios_img" src="./IMAGENS/acessórios.png" alt="Acessórios">
+        <h1>ACES<span class="metadeBanner">SÓRIOS</span></h1>
     </section>
 
     <!-- Produtos -->
@@ -27,12 +58,19 @@
             
                 <div class="area-compra">
 
-                    <button class="compra" onclick="comprar('coqueteleira')">
+                      <div class="quantidade">
+                        <button onclick="diminuir()">-</button>
+                        <input type="text" value="1">
+                        <button onclick="aumentar()">+</button>
+                    </div>
+
+                    <button class="compra" onclick="comprar('wheyMax')">
 
                         <img class="carrinho" src="./IMAGENS/carrinho.png" alt="Carrinho">
 
                         Comprar
                     </button>
+
                 </div>
                     
             </div>
@@ -50,12 +88,19 @@
             
                 <div class="area-compra">
 
+                      <div class="quantidade">
+                        <button onclick="diminuir()">-</button>
+                        <input type="text" value="1">
+                        <button onclick="aumentar()">+</button>
+                    </div>
+
                     <button class="compra" onclick="comprar('garrafa')">
 
-                            <img class="carrinho" src="IMAGENS/carrinhodecompras.png" alt="Carrinho">
+                        <img class="carrinho" src="./IMAGENS/carrinho.png" alt="Carrinho">
 
                         Comprar
                     </button>
+
                 </div>
                     
             </div>
@@ -71,12 +116,17 @@
                 <h1 class="titulo">GROWT - Mochila <br>Média</h1>
                 <p class="preco">R$149,99</p>
 
-                <div class="area-compra">
+               <div class="area-compra">
+
+                      <div class="quantidade">
+                        <button onclick="diminuir()">-</button>
+                        <input type="text" value="1">
+                        <button onclick="aumentar()">+</button>
+                    </div>
 
                     <button class="compra" onclick="comprar('mochila')">
 
                         <img class="carrinho" src="./IMAGENS/carrinho.png" alt="Carrinho">
-
 
                         Comprar
                     </button>
@@ -96,11 +146,16 @@
                 <p class="preco">R$49,99</p>
 
                 <div class="area-compra">
-                    
-                    <button class="compra" onclick="comprar('bone')">
+
+                      <div class="quantidade">
+                        <button onclick="diminuir()">-</button>
+                        <input type="text" value="1">
+                        <button onclick="aumentar()">+</button>
+                    </div>
+
+                    <button class="compra" onclick="comprar('wheyMax')">
 
                         <img class="carrinho" src="./IMAGENS/carrinho.png" alt="Carrinho">
-
 
                         Comprar
                     </button>
@@ -119,12 +174,17 @@
                 <h1 class="titulo">SHARKPRO - Elástico</h1>
                 <p class="preco">R$29,99</p>
             
-                <div class="area-compra">
-                   
+               <div class="area-compra">
+
+                      <div class="quantidade">
+                        <button onclick="diminuir()">-</button>
+                        <input type="text" value="1">
+                        <button onclick="aumentar()">+</button>
+                    </div>
+
                     <button class="compra" onclick="comprar('elastico')">
 
                         <img class="carrinho" src="./IMAGENS/carrinho.png" alt="Carrinho">
-
 
                         Comprar
                     </button>
@@ -143,11 +203,17 @@
                 <h1 class="titulo">DARKLAB - Strap 1 Par</h1>
                 <p class="preco">R$29,99</p>
             
-                <div class="area-compra">
+               <div class="area-compra">
 
-                    <button class="compra" onclick="comprar('strap')">
+                      <div class="quantidade">
+                        <button onclick="diminuir()">-</button>
+                        <input type="text" value="1">
+                        <button onclick="aumentar()">+</button>
+                    </div>
 
-                        <img class="carrinho" src="" alt="Carrinho">
+                    <button class="compra" onclick="comprar('wheyMax')">
+
+                        <img class="carrinho" src="./IMAGENS/carrinho.png" alt="Carrinho">
 
                         Comprar
                     </button>
