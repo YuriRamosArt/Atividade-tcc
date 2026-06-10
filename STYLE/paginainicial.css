@@ -13,3 +13,25 @@ body{
     height: auto;
     margin-top: 60px;
 }
+
+button {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-45%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.65);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.esquerda{
+    left: 10px;
+    border-color: none;
+}
+
+.direita{
+    right: 10px;
+}
