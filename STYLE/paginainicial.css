@@ -70,8 +70,9 @@ body{
     cursor: pointer;
 }
 .card:hover{
-    transform: translateY(-5px);
     transition: 0.3s;
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px #3b3b34;
 }
 
 .card img{
@@ -111,11 +112,12 @@ body{
     padding: 12px;
     border: none;
     border-radius: 10px;
-    background: linear-gradient(to right,#c7e5ff,#4d6b80);
+    background: linear-gradient(to left, #BEE6FF,#709AB3, #181818);;
     font-size: 18px;
     cursor: pointer;
 }
 .card button:hover{
-    background: linear-gradient(to right,#4d6b80,#c7e5ff);
+    background-color: #b8e7ff;   
+    color: #ffffff;
     transition: 0.3s;
 }
