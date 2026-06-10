@@ -14,7 +14,6 @@ body{
     margin-top: 60px;
 }
 
-
 .esquerda {
    position: absolute;
     top: 45%;
@@ -28,6 +27,7 @@ body{
     cursor: pointer;
     left: 10px;
 }
+
 .direita {
     position: absolute;
     top: 45%;
