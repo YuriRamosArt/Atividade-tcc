@@ -14,7 +14,6 @@ body{
     width: 100%;
     height: auto;
     margin-top: 60px;
-    margin-left: 900px;
 }
 
 .esquerda {
@@ -122,3 +121,4 @@ body{
     color: #ffffff;
     transition: 0.3s;
 }
+
