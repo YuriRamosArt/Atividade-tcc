@@ -17,9 +17,9 @@ header {
   background: black;
   color: white;
   text-align: center;
-  padding: 5px;
+  padding: 13px;
   font-size: 14px;
-  height: 30px;
+  height: 44px;
 }
 .main-header {
   display: flex;
@@ -28,7 +28,7 @@ header {
   background: linear-gradient(to right, #BEE6FF, #709AB3, #181818);
   padding: 10px 20px;
   overflow: hidden;
-  height: 80px;
+  height: 100px;
 }
 .left {
   display: flex;
