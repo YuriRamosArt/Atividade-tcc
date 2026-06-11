@@ -254,12 +254,6 @@ body{
     color: #ffffff;
     transition: 0.3s;
 }
-.carrinho{
-    width: 37px;
-    position: absolute;
-    right: -2px;
-    top: 6px;
-}
 
 button{
     cursor: pointer; 
