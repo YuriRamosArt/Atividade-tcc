@@ -70,12 +70,6 @@ nav a {
     transition: 0.3s;
 }
 
-.right {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
 .search-box {
   position: relative;
   width: 420px;
