@@ -33,6 +33,7 @@ header {
   text-align: center;
   padding: 5px;
   font-size: 14px;
+  height: 30px;
 }
 .main-header {
   display: flex;
@@ -41,7 +42,7 @@ header {
   background: linear-gradient(to right, #BEE6FF, #709AB3, #181818);
   padding: 10px 20px;
   overflow: hidden;
-  height: 70px;
+  height: 80px;
 }
 .left {
   display: flex;
@@ -81,12 +82,6 @@ nav a {
 .pag:hover{
     color: #0941bb;
     transition: 0.3s;
-}
-
-.right {
-  display: flex;
-  align-items: center;
-  gap: 15px;
 }
 
 .search-box {
