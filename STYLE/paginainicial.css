@@ -82,6 +82,7 @@ body{
 }
 
 .card h3{
+    height: 50px;
     font-size: 18px;
     margin: 15px 0;
 }
