@@ -198,6 +198,10 @@ body{
 .preco{
     font-size: 20px;
 }
+.promoção{
+    text-decoration: line-through;
+    font-size: 20px;
+}
 
 
 .compra-area{
