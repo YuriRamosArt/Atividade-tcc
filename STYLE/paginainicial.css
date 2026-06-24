@@ -9,11 +9,34 @@ body{
     background: #fff;
 }
 
-.banner img {
-    position: relative; /*para que o elemento continue em sua posição original sem afetar nada ao redor*/
+.carrosel{
     width: 100%;
-    height: auto;
+    overflow: hidden;
     margin-top: 100px;
+}
+
+.banner{
+    display: flex;
+    width: 200%;
+    animation: slide 8s infinite;
+}
+
+.banner img{
+    width: 50%;
+    height: auto;
+}
+@keyframes slide{
+    0%, 45%{
+        transform: translateX(0);
+    }
+
+    50%, 95%{
+        transform: translateX(-50%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
 }
 
 .esquerda {
