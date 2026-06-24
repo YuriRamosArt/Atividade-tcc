@@ -11,20 +11,31 @@ body{
 
 .carrosel{
     width: 100%;
+    height: 400px;
     overflow: hidden;
-    margin-top: 100px;
+    position: relative;
 }
 
 .banner{
     display: flex;
     width: 200%;
-    animation: slide 8s infinite;
+    animation: slide 8s infinite ease-in-out;
 }
-
 .banner img{
     width: 50%;
-    height: auto;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
 }
+.banner1{
+    width: 400px;
+    height: 400px;
+}
+.banner2{
+    width: 400px;
+    height: 400px;
+}
+
 @keyframes slide{
     0%, 45%{
         transform: translateX(0);
