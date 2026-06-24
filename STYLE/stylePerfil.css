@@ -114,3 +114,16 @@ nav a {
   transition: 0.3s;
 }
 
+body{
+  min-height: 100vh;
+  background: linear-gradient(to right, #35566C 0%,#c2e0f6 50%,#b9ddf6 100%);
+  opacity: 14.4px;
+  font-family: 'Inter', sans-serif;
+}
+
+.titulo{
+  margin-top: 120px;
+  font-size: 30px;
+  margin-left: 30px;
+}
+
