@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-:root{
-    --var-cor-do-carrinho: linear-gradient(to right, #BEE6FF,#709AB3, #181818);;
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 html{
     scroll-behavior: smooth;
@@ -26,7 +23,6 @@ header {
   text-align: center;
   padding: 5px;
   font-size: 14px;
-  height: 30px;
 }
 .main-header {
   display: flex;
@@ -35,7 +31,7 @@ header {
   background: linear-gradient(to right, #BEE6FF, #709AB3, #181818);
   padding: 10px 20px;
   overflow: hidden;
-  height: 80px;
+  height: 70px;
 }
 .left {
   display: flex;
@@ -124,7 +120,6 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
-
 .banner{
     display: flex;
     align-items: center;
@@ -143,7 +138,7 @@ body{
 
 .container-cards{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     padding: 50px;
     justify-items: center;
@@ -162,7 +157,6 @@ body{
     padding: 15px;
     transition: 0.3s;
 }
-
 .cards:hover{
     transform: translateY(-10px);
     box-shadow: 0 0 10px #3b3b34;
@@ -241,7 +235,6 @@ body{
 }
 .compra:hover{
     background-color: #b8e7ff;
-    
     color: #ffffff;
     transition: 0.3s;
 }
@@ -250,6 +243,7 @@ button{
     cursor: pointer; 
     transition: 0.3s;
 }
+
 footer{
     background: #181818;
     padding: 60px 10%;
@@ -317,101 +311,4 @@ footer::after{
     height: 1px;
     background: #333;
     margin-top: 40px;
-}
-
-
-.modal{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0,0,0,0.1);
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-/* QUANDO ABRIR */
-.modal.ativo{
-    display: flex;
-}
-
-/* CARD DO MODAL */
-.modal-content{
-    width: 420px;
-    background: white;
-    padding: 25px;
-    border-radius: 20px;
-    text-align: center;
-    position: relative;
-    box-shadow: 0 0 25px rgba(0,0,0,0.6);
-}
-
-/* IMAGEM */
-.modal-content img{
-    width: 220px;
-    height: 220px;
-    object-fit: contain;
-}
-
-/* BOTÃO FECHAR */
-.fechar{
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 30px;
-    cursor: pointer;
-    color: #181818;
-}
-
-/* BOTÃO DO MODAL */
-.modal-content button{
-    margin-top: 15px;
-    width: 100%;
-    height: 45px;
-    border: none;
-    border-radius: 10px;
-    background: linear-gradient(to left, #BEE6FF,#709AB3, #181818);;
-    font-weight: bold;
-    cursor: pointer;
-}
-.modal-content button:hover{
-    background-color: #b8e7ff;
-    color: #ffffff;
-    transition: 0.3s;
-}
-
-.quantidade-modal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin: 15px 0;
-}
-
-.quantidade-modal button{
-    width: 40px;
-    height: 35px;
-    border: none;
-    border-radius: 8px;
-    background: #BEE6FF;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.quantidade-modal input{
-    width: 30px;
-    text-align: center;
-    border-radius: 6px;
-    border: none;
-    height: 35px;
-}
-
-#qtdModal{
-    font-size: 22px;
-    font-weight: 600;
-    margin-top: 15px;
 }

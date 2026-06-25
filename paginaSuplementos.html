@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Suplementos</title>
-
+    
     <link rel="stylesheet" href="./STYLE/styleSuplementos.css">
+    <link rel="shortcut icon" href="./IMAGENS/Logo.png" type="image/x-icon">
 </head>
     <header>
     <div class="top-bar">
@@ -18,8 +19,9 @@
         <img src="./IMAGENS/MENU.png" class="menu-icon">
 
         <nav>
+          <a href="./paginainicial.html" class="pag">inicio</a>
           <a href="./paginaAcessórios.html" class="pag">acessórios</a>
-          <a href="#" class="pag">roupas</a>
+          <a href="./roupas.html" class="pag">roupas</a>
           <a href="./paginaSuplementos.html" class="pag">suplementos</a>
         </nav>
       </div>
@@ -31,7 +33,7 @@
         </div>
 
         <div class="icons">
-          <img src="./IMAGENS/carrinho-de-compras.png" class="icon">
+          <img src="./IMAGENS/carrinhodecompras.png" class="icon">
           <a href="login.html">
           <img src="./IMAGENS/LOGIN.png" class="icon">
           </a>
@@ -60,14 +62,12 @@
                 <div class="area-compra">
 
                       <div class="quantidade">
-                        <button onclick="diminuir()">-</button>
+                        <button onclick="diminuir(this)">-</button>
                         <input type="text" value="1">
-                        <button onclick="aumentar()">+</button>
+                        <button onclick="aumentar(this)">+</button>
                     </div>
 
-                    <button class="compra" onclick="comprar('wheyMax')">
-
-                        <img class="carrinho" src="./IMAGENS/carrinho.png" alt="Carrinho">
+                    <button class="compra" onclick="abrirProduto(this)">
 
                         Comprar
                     </button>
@@ -89,14 +89,12 @@
                 <div class="area-compra">
 
                     <div class="quantidade">
-                        <button onclick="diminuir()">-</button>
+                        <button onclick="diminuir(this)">-</button>
                         <input type="text" value="1">
-                        <button onclick="aumentar()">+</button>
+                        <button onclick="aumentar(this)">+</button>
                     </div>
 
-                    <button class="compra" onclick="comprar('wheyFresh')">
-
-                            <img class="carrinho" src="./IMAGENS/carrinho.png" alt="Carrinho">
+                    <button class="compra" onclick="abrirProduto(this)">
 
                         Comprar
                     </button>
@@ -118,15 +116,12 @@
                 <div class="area-compra">
 
                     <div class="quantidade">
-                        <button onclick="diminuir()">-</button>
+                        <button onclick="diminuir(this)">-</button>
                         <input type="text" value="1">
-                        <button onclick="aumentar()">+</button>
+                        <button onclick="aumentar(this)">+</button>
                     </div>
 
-                    <button class="compra" onclick="comprar('creatina')">
-
-                        <img class="carrinho" src="./IMAGENS/carrinho.png" alt="Carrinho">
-
+                    <button class="compra" onclick="abrirProduto(this)">
 
                         Comprar
                     </button>
@@ -148,15 +143,12 @@
                 <div class="area-compra">
 
                     <div class="quantidade">
-                        <button onclick="diminuir()">-</button>
+                        <button onclick="diminuir(this)">-</button>
                         <input type="text" value="1">
-                        <button onclick="aumentar()">+</button>
+                        <button onclick="aumentar(this)">+</button>
                     </div>
                     
-                    <button class="compra" onclick="comprar('cafeina')">
-
-                        <img class="carrinho" src="./IMAGENS/carrinho.png" alt="Carrinho">
-
+                    <button class="compra" onclick="abrirProduto(this)">
 
                         Comprar
                     </button>
@@ -178,15 +170,12 @@
                 <div class="area-compra">
 
                     <div class="quantidade">
-                        <button onclick="diminuir()">-</button>
+                        <button onclick="diminuir(this)">-</button>
                         <input type="text" value="1">
-                        <button onclick="aumentar()">+</button>
+                        <button onclick="aumentar(this)">+</button>
                     </div>
                    
-                    <button class="compra" onclick="comprar('raze')">
-
-                        <img class="carrinho" src="./IMAGENS/carrinho.png" alt="Carrinho">
-
+                    <button class="compra" onclick="abrirProduto(this)">
 
                         Comprar
                     </button>
@@ -208,14 +197,12 @@
                 <div class="area-compra">
 
                     <div class="quantidade">
-                        <button onclick="diminuir()">-</button>
+                        <button onclick="diminuir(this)">-</button>
                         <input type="text" value="1">
-                        <button onclick="aumentar()">+</button>
+                        <button onclick="aumentar(this)">+</button>
                     </div>
 
-                    <button class="compra" onclick="comprar('wheyFreshMorango')">
-
-                        <img class="carrinho" src="./IMAGENS/carrinho.png" alt="Carrinho">
+                    <button class="compra" onclick="abrirProduto(this)">
 
                         Comprar
                     </button>
@@ -227,5 +214,65 @@
 
     </section>
 
+   <div class="modal" id="modal">
+
+
+    <div class="modal-content">
+
+        <span class="fechar" onclick="fecharModal()">&times;</span>
+
+        <img id="modalImg">
+        <h2 id="modalNome"></h2>
+        <p id="modalPreco"></p>
+
+        <div class="quantidade-modal">
+
+            <button onclick="diminuirModal()">-</button>
+            
+            <input type="text" id="qtdModal" value="1">
+
+            <button onclick="aumentarModal()">+</button>
+
+        </div>
+        <button onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+    </div>
+
+   </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>AYSI</h3>
+      <p>A Aysi é uma empresa
+      de suplementos alimentares
+      que busca oferecer produtos
+      de alta qualidade e eficácia para 
+      atletas, praticantes de atividades
+      físicas e pessoas que buscam uma 
+      vida mais saudável.</p>
+      <p>ASIY &copy; 2026. Todos os direitos reservados.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Links Rápidos</h3>
+        <ul>
+          <li><a href="./paginainicial.html">Início</a></li>
+          <li><a href="paginaAcessórios.html">Acessórios</a></li>
+          <li><a href="./roupas.html">Roupas</a></li>
+          <li><a href="paginaSuplementos.html">Suplementos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contato</h3>
+        <p>Email: contato@aysi.com</p>
+        <p>Telefone: (11) 1234-5678</p>
+        <p>Formas de Pagamento</p>
+        <img src="./IMAGENS/formasPagmento.png" alt="pagamentosFormas" class="pagamento-icon">
+
+      </div>
+    </div>
+    <script src="./BACK/suplementos.js"></script>
+  </footer>
 </body>
 </html>

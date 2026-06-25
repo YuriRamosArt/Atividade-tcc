@@ -9,11 +9,45 @@ body{
     background: #fff;
 }
 
-.banner img {
-    position: relative; /*para que o elemento continue em sua posição original sem afetar nada ao redor*/
+.carrosel{
     width: 100%;
-    height: auto;
-    margin-top: 60px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner{
+    display: flex;
+    width: 200%;
+    animation: slide 8s infinite ease-in-out;
+}
+.banner img{
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.banner1{
+    width: 400px;
+    height: 400px;
+}
+.banner2{
+    width: 400px;
+    height: 400px;
+}
+
+@keyframes slide{
+    0%, 45%{
+        transform: translateX(0);
+    }
+
+    50%, 95%{
+        transform: translateX(-50%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
 }
 
 .esquerda {
@@ -25,7 +59,7 @@ body{
     border-radius: 50%;
     border: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.65);
-    font-size: 15px;
+    font-size: 30px;
     cursor: pointer;
     left: 10px;
 }
@@ -39,7 +73,7 @@ body{
     border-radius: 50%;
     border: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.65);
-    font-size: 15px;
+    font-size: 30px;
     cursor: pointer;
     right: 10px;
 }
@@ -77,6 +111,7 @@ body{
 }
 
 .card h3{
+    height: 50px;
     font-size: 18px;
     margin: 15px 0;
 }
@@ -111,3 +146,9 @@ body{
     font-size: 18px;
     cursor: pointer;
 }
+.card button:hover{
+    background-color: #b8e7ff;   
+    color: #ffffff;
+    transition: 0.3s;
+}
+
