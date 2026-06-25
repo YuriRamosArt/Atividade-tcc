@@ -178,21 +178,20 @@ body{
     display: flex;
     flex-direction: column;
     gap: 20px;
+   margin-right: 200px;
 }
 
 .opcao {
     width: 350px;
     height: 50px;
-
     background: #5f97d6;
     border-radius: 8px;
-
     display: flex;
     align-items: center;
-
     text-decoration: none;
     color: white;
     font-weight: bold;
+    margin-left: 50px;
 }
 
 .opcao img {
