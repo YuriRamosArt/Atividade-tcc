@@ -90,9 +90,9 @@ body{
 
 .cards{
     display: flex;
-    gap: 30px;
+    gap: 30px; /*serve para criar um espaçamento entre os itens de um container flex ou grid*/
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*serve para permitir que os itens de um container flexível quebrem para a próxima linha quando não houver espaço suficiente*/
 }
 
 .card{
@@ -102,11 +102,6 @@ body{
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     cursor: pointer;
-}
-.card:hover{
-    transition: 0.3s;
-    transform: translateY(-10px);
-    box-shadow: 0 0 10px #3b3b34;
 }
 
 .card img{
@@ -147,7 +142,7 @@ body{
     padding: 12px;
     border: none;
     border-radius: 10px;
-    background: linear-gradient(to left, #BEE6FF,#709AB3, #181818);;
+    background: linear-gradient(to right,#c7e5ff,#4d6b80);
     font-size: 18px;
     cursor: pointer;
 }
