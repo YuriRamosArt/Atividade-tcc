@@ -127,3 +127,80 @@ body{
   margin-left: 30px;
 }
 
+.perfil-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 80vh;
+    padding: 50px;
+}
+
+.perfil-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfil-info img {
+    width: 120px;
+}
+
+.perfil-info h2 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.perfil-info p {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.perfil-info button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: #4f86c6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.perfil-info button img {
+    width: 15px;
+}
+
+.menu-perfil {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.opcao {
+    width: 350px;
+    height: 50px;
+
+    background: #5f97d6;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.opcao img {
+    width: 25px;
+    margin-left: 15px;
+}
+
+.opcao span {
+    flex: 1;
+    text-align: center;
+}
