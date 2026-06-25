@@ -59,13 +59,13 @@
             
                 <div class="area-compra">
 
-                      <div class="quantidade">
-                        <button onclick="diminuir()">-</button>
+                    <div class="quantidade">
+                        <button onclick="diminuir(this)">-</button>
                         <input type="text" value="1">
-                        <button onclick="aumentar()">+</button>
+                        <button onclick="aumentar(this)">+</button>
                     </div>
 
-                    <button class="compra" onclick="comprar('coqueteleira')">
+                    <button class="compra" onclick="abrirProduto(this)">
                         Comprar
                     </button>
 
@@ -87,12 +87,12 @@
                 <div class="area-compra">
 
                       <div class="quantidade">
-                        <button onclick="diminuir()">-</button>
+                        <button onclick="diminuir(this)">-</button>
                         <input type="text" value="1">
-                        <button onclick="aumentar()">+</button>
+                        <button onclick="aumentar(this)">+</button>
                     </div>
 
-                    <button class="compra" onclick="comprar('garrafa')">
+                    <button class="compra" onclick="abrirProduto(this)">
                         Comprar
                     </button>
 
@@ -114,14 +114,13 @@
 
                <div class="area-compra">
 
-                      <div class="quantidade">
-                        <button onclick="diminuir()">-</button>
+                    <div class="quantidade">
+                        <button onclick="diminuir(this)">-</button>
                         <input type="text" value="1">
-                        <button onclick="aumentar()">+</button>
+                        <button onclick="aumentar(this)">+</button>
                     </div>
 
-                    <button class="compra" onclick="comprar('mochila')">
-
+                    <button class="compra" onclick="abrirProduto(this)">
                         Comprar
                     </button>
                 </div>
@@ -141,13 +140,13 @@
 
                 <div class="area-compra">
 
-                      <div class="quantidade">
-                        <button onclick="diminuir()">-</button>
+                    <div class="quantidade">
+                        <button onclick="diminuir(this)">-</button>
                         <input type="text" value="1">
-                        <button onclick="aumentar()">+</button>
+                        <button onclick="aumentar(this)">+</button>
                     </div>
 
-                    <button class="compra" onclick="comprar('bone')">
+                    <button class="compra" onclick="abrirProduto(this)">
                         Comprar
                     </button>
                 </div>
@@ -168,12 +167,12 @@
                <div class="area-compra">
 
                       <div class="quantidade">
-                        <button onclick="diminuir()">-</button>
+                        <button onclick="diminuir(this)">-</button>
                         <input type="text" value="1">
-                        <button onclick="aumentar()">+</button>
+                        <button onclick="aumentar(this)">+</button>
                     </div>
 
-                    <button class="compra" onclick="comprar('elastico')">
+                    <button class="compra" onclick="abrirProduto(this)">
                         Comprar
                     </button>
                 </div>
@@ -194,12 +193,12 @@
                <div class="area-compra">
 
                       <div class="quantidade">
-                        <button onclick="diminuir()">-</button>
+                        <button onclick="diminuir(this)">-</button>
                         <input type="text" value="1">
-                        <button onclick="aumentar()">+</button>
+                        <button onclick="aumentar(this)">+</button>
                     </div>
 
-                    <button class="compra" onclick="comprar('strap')">
+                    <button class="compra" onclick="abrirProduto(this)">
                         Comprar
                     </button>
                 </div>
@@ -218,13 +217,13 @@
             
                <div class="area-compra">
 
-                      <div class="quantidade">
-                        <button onclick="diminuir()">-</button>
+                    <div class="quantidade">
+                        <button onclick="diminuir(this)">-</button>
                         <input type="text" value="1">
-                        <button onclick="aumentar()">+</button>
+                        <button onclick="aumentar(this)">+</button>
                     </div>
 
-                    <button class="compra" onclick="comprar('cinturao')">
+                    <button class="compra" onclick="abrirProduto(this)">
                         Comprar
                     </button>
                 </div>
@@ -243,21 +242,50 @@
             
                <div class="area-compra">
 
-                      <div class="quantidade">
-                        <button onclick="diminuir()">-</button>
+                    <div class="quantidade">
+                        <button onclick="diminuir(this)">-</button>
                         <input type="text" value="1">
-                        <button onclick="aumentar()">+</button>
+                        <button onclick="aumentar(this)">+</button>
                     </div>
 
-                    <button class="compra" onclick="comprar('joelheira')">
+                    <button class="compra" onclick="abrirProduto(this)">
                         Comprar
                     </button>
+
                 </div>
 
             </div>
 
         </div>
     </section>
+
+<div class="modal" id="modal">
+    <div class="modal-content">
+
+        <span class="fechar" onclick="fecharModal()">&times;</span>
+
+        <img id="modalImg">
+
+        <h2 id="modalNome"></h2>
+
+        <p id="modalPreco"></p>
+
+        <div class="quantidade-modal">
+
+            <button onclick="diminuirModal()">-</button>
+
+            <input type="text" id="qtdModal" value="1">
+
+            <button onclick="aumentarModal()">+</button>
+
+        </div>
+
+        <button onclick="adicionarCarrinho()">
+            Adicionar ao Carrinho
+        </button>
+
+    </div>
+</div>
 
  <footer>
     <div class="footer-content">
@@ -293,5 +321,6 @@
       </div>
     </div>
   </footer>
+  <script src="./BACK/acessorios.js"></script>
 </body>
 </html>
