@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-:root{
-    --var-cor-do-carrinho: linear-gradient(to right, #BEE6FF,#709AB3, #181818);;
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 html{
     scroll-behavior: smooth;
@@ -20,14 +17,12 @@ header {
   width: 100%;
   z-index: 1000;
 }
-
 .top-bar {
   background: black;
   color: white;
   text-align: center;
   padding: 5px;
   font-size: 14px;
-  height: 30px;
 }
 .main-header {
   display: flex;
@@ -36,7 +31,7 @@ header {
   background: linear-gradient(to right, #BEE6FF, #709AB3, #181818);
   padding: 10px 20px;
   overflow: hidden;
-  height: 80px;
+  height: 70px;
 }
 .left {
   display: flex;
@@ -131,7 +126,7 @@ body{
     gap: 20px;
     padding: 20px;
     font-size: 35px;
-    margin-top: 98px;
+    margin-top: 80px;
 }
 .metadeBanner{
     color: #f2f3e9e3;
@@ -162,7 +157,6 @@ body{
     padding: 15px;
     transition: 0.3s;
 }
-
 .cards:hover{
     transform: translateY(-10px);
     box-shadow: 0 0 10px #3b3b34;
@@ -192,10 +186,6 @@ body{
 .preco{
     font-size: 20px;
 }
-.promoção{
-    text-decoration: line-through;
-    font-size: 20px;
-}
 
 
 .compra-area{
@@ -208,7 +198,7 @@ body{
     align-items: flex-end;
     position: relative;
     top: 110px;
-    left: 130px;
+    left: 110px;
 }
 .quantidade button{
     width: 25px;
@@ -233,18 +223,18 @@ body{
 }
 .compra{
     font-weight: 600;
-    background: linear-gradient(to right, #BEE6FF,#709AB3, #181818);;
+    background: linear-gradient(to left, #BEE6FF,#709AB3, #181818);;
     position: relative;
     height: 55px;
     width: 160px;
     border-radius: 15px;
     border: none;
     font-size: 20px;
-    left: -37px;
+    left: -59px;
     top: 70px;
 }
 .compra:hover{
-    background-color: #b8e7ff;   
+    background-color: #b8e7ff;
     color: #ffffff;
     transition: 0.3s;
 }
