@@ -148,30 +148,39 @@
                     Comprar
                 </button>
             </div>
+
         </div>
     </div>
   </section>
 
-<div class="modal-content">
-    <span class="fechar" onclick="fecharModal()">&times;</span>
+<div class="modal" id="modal">
 
-    <img id="modalImg">
+    <div class="modal-content">
 
-    <h2 id="modalNome"></h2>
+        <span class="fechar" onclick="fecharModal()">&times;</span>
 
-    <p id="modalPreco"></p>
+        <img id="modalImg" src="" alt="Produto">
 
-    <div class="quantidade-modal">
-        <button onclick="diminuirModal()">-</button>
+        <h2 id="modalNome"></h2>
 
-        <input type="text" id="qtdModal" value="1">
+        <p id="modalPreco"></p>
 
-        <button onclick="aumentarModal()">+</button>
+        <div class="quantidade-modal">
+
+            <button onclick="diminuirModal()">-</button>
+
+            <input type="text" id="qtdModal" value="1" readonly>
+
+            <button onclick="aumentarModal()">+</button>
+
+        </div>
+
+        <button class="compra" id="compra" onclick="adicionarCarrinho()">
+            Adicionar ao Carrinho
+        </button>
+
     </div>
 
-    <button onclick="adicionarCarrinho()">
-        Adicionar ao Carrinho
-    </button>
 </div>
 
   <footer>
