@@ -68,7 +68,17 @@
             <p class="preco-antigo">R$49,99</p>
             <p class="preco">R$29,99 <span>NO PIX</span></p>
 
-            <button>Comprar</button>
+            <div class="area-compra">
+                <div class="quantidade">
+                    <button onclick="diminuir(this)">-</button>
+                    <input type="text" value="1">
+                    <button onclick="aumentar(this)">+</button>
+                </div>
+
+                <button class="compra" onclick="abrirProduto(this)">
+                    Comprar
+                </button>
+            </div>
         </div>
 
         <div class="card">
@@ -80,7 +90,18 @@
             <p class="preco-antigo">R$69,99</p>
             <p class="preco">R$49,99 <span>NO PIX</span></p>
 
-            <button>Comprar</button>
+                       
+            <div class="area-compra">
+                <div class="quantidade">
+                    <button onclick="diminuir(this)">-</button>
+                    <input type="text" value="1">
+                    <button onclick="aumentar(this)">+</button>
+                </div>
+
+                <button class="compra" onclick="abrirProduto(this)">
+                    Comprar
+                </button>
+            </div>
 
         </div>
 
@@ -93,7 +114,18 @@
             <p class="preco-antigo">R$79,99</p>
             <p class="preco">R$59,99 <span>NO PIX</span></p>
 
-            <button>Comprar</button>
+                     
+            <div class="area-compra">
+                <div class="quantidade">
+                    <button onclick="diminuir(this)">-</button>
+                    <input type="text" value="1">
+                    <button onclick="aumentar(this)">+</button>
+                </div>
+
+                <button class="compra" onclick="abrirProduto(this)">
+                    Comprar
+                </button>
+            </div>
         </div>
 
           <div class="card">
@@ -105,10 +137,42 @@
             <p class="preco-antigo">R$149,99</p>
             <p class="preco">R$99,99 <span>NO PIX</span></p>
 
-            <button>Comprar</button>
+            <div class="area-compra">
+                <div class="quantidade">
+                    <button onclick="diminuir(this)">-</button>
+                    <input type="text" value="1">
+                    <button onclick="aumentar(this)">+</button>
+                </div>
+
+                <button class="compra" onclick="abrirProduto(this)">
+                    Comprar
+                </button>
+            </div>
         </div>
     </div>
   </section>
+
+<div class="modal-content">
+    <span class="fechar" onclick="fecharModal()">&times;</span>
+
+    <img id="modalImg">
+
+    <h2 id="modalNome"></h2>
+
+    <p id="modalPreco"></p>
+
+    <div class="quantidade-modal">
+        <button onclick="diminuirModal()">-</button>
+
+        <input type="text" id="qtdModal" value="1">
+
+        <button onclick="aumentarModal()">+</button>
+    </div>
+
+    <button onclick="adicionarCarrinho()">
+        Adicionar ao Carrinho
+    </button>
+</div>
 
   <footer>
     <div class="footer-content">
@@ -146,6 +210,7 @@
   </footer>
 
   <script src="./BACK/carrossel.js"></script>
+  <script src="./BACK/paginaIncial.js"></script>>
 
 </body>
 </html>
