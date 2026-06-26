@@ -1,0 +1,190 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#d6edf9;
+}
+
+/* Área principal */
+
+main{
+    display:flex;
+    width:100%;
+    min-height:calc(100vh - 80px);
+}
+
+/* Lado esquerdo */
+
+.perfil-left{
+    width:340px;
+    background:#f5efdf;
+    padding:30px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top: 90px;
+}
+
+.perfil-left h2{
+    width:100%;
+    margin-bottom:25px;
+    color:#111;
+}
+
+.foto{
+    margin-bottom:20px;
+}
+
+.foto img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:6px solid #000;
+    object-fit:cover;
+}
+
+.perfil-left h3{
+    font-size:28px;
+    text-align:center;
+    margin-bottom:5px;
+}
+
+.perfil-left small{
+    color:#666;
+    margin-bottom:25px;
+    text-align:center;
+}
+
+/* Campos */
+
+.perfil-left input{
+    width:100%;
+    height:45px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:8px;
+    padding:0 15px;
+    background:#8b8476;
+    color:white;
+    font-size:15px;
+}
+
+.perfil-left input::placeholder{
+    color:white;
+}
+
+/* Botões */
+
+.buttons{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    margin-top:15px;
+}
+
+.buttons button{
+    width:100%;
+    height:45px;
+    border:none;
+    border-radius:8px;
+    background:#5e8fc7;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.buttons button:hover{
+    background:#4d7cb1;
+}
+
+/* Lado direito */
+
+.perfil-right{
+    flex:1;
+    background:#d6edf9;
+    padding:40px;
+}
+
+/* Título */
+
+.title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:50px;
+}
+
+.title h2{
+    font-size:38px;
+    color:#222;
+}
+
+.title i{
+    font-size:28px;
+    color:#555;
+    cursor:pointer;
+}
+
+/* Lista de botões */
+
+.menu-perfil{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    align-items:center;
+    margin-top: 90px;
+}
+
+/* Botões */
+
+.menu-perfil button{
+    width:75%;
+    height:60px;
+    border:none;
+    border-radius:8px;
+    background:#5b8dc7;
+    color:white;
+    font-size:22px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.menu-perfil button:hover{
+    background:#4b79aa;
+}
+
+.menu-perfil i{
+    font-size:22px;
+}
+
+/* Responsivo */
+
+@media(max-width:900px){
+
+main{
+    flex-direction:column;
+}
+
+.perfil-left{
+    width:100%;
+}
+
+.perfil-right{
+    width:100%;
+}
+
+.menu-perfil button{
+    width:100%;
+}
+
+}
