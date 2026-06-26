@@ -369,7 +369,7 @@ footer::after{
     color: #181818;
 }
 .fechar:hover{
-    color: red;
+    color: #0941bb;
     transition: 0.3s;
 }
 
