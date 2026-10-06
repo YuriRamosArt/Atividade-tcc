@@ -1,0 +1,52 @@
+.area-compra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.quantidade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    gap: 8px;
+    transform: translateY(15px);
+    margin-bottom: 15px;
+    background-color: #BEE6FF;
+    border: 1px solid #BEE6FF;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.quantidade button {
+    width: 30px;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    position: relative;
+    top: -15px;
+    background-color: #BEE6FF;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+.quantidade button:hover {
+    color: #0941bb;
+    transform: scale(1.05);
+}
+
+.quantidade input {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    font-weight: 600;
+    background-color: #BEE6FF;
+}
+.quantidade input{
+    box-sizing: border-box;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
