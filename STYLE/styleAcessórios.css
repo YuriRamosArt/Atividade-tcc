@@ -218,11 +218,13 @@ body{
     font-size: 20px;
     border-radius: 4px;
     font-weight: 600;
+    background-color: #BEE6FF;
 }
 .quantidade button:hover{
-    color: #0941bb;
-    transform: scale(1.3);
+    color: #538eb1;
+    transform: scale(1.05);
 }
+
 .quantidade input{
     width: 30px;
     height: 25px;
@@ -230,10 +232,14 @@ body{
     font-size: 20px;
     font-weight: 600;
     text-align: center;
+    background-color: #BEE6FF;
+    box-sizing: border-box;
+    border-left: 1px solid #000000;    
+    border-right: 1px solid #000000;
 }
 .compra{
     font-weight: 600;
-    background: linear-gradient(to right, #BEE6FF,#709AB3, #181818);;
+    background: #BEE6FF;
     position: relative;
     height: 55px;
     width: 160px;
@@ -244,7 +250,7 @@ body{
     top: 70px;
 }
 .compra:hover{
-    background-color: #b8e7ff;   
+    background-color: #709AB3;   
     color: #ffffff;
     transition: 0.3s;
 }
@@ -380,12 +386,12 @@ footer::after{
     height: 45px;
     border: none;
     border-radius: 10px;
-    background: linear-gradient(to left, #BEE6FF,#709AB3, #181818);;
+    background: #BEE6FF;
     font-weight: bold;
     cursor: pointer;
 }
 .modal-content button:hover{
-    background-color: #b8e7ff;
+    background-color: #709AB3;
     color: #ffffff;
     transition: 0.3s;
 }
