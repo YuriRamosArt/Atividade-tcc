@@ -26,7 +26,7 @@ main{
     display:flex;
     flex-direction:column;
     align-items:center;
-    margin-top: 90px;
+    margin-top: 160px;
 }
 
 .perfil-left h2{
@@ -136,9 +136,9 @@ main{
 .menu-perfil{
     display:flex;
     flex-direction:column;
-    gap:18px;
+    gap: 40px;
     align-items:center;
-    margin-top: 90px;
+    margin-top: 250px;
 }
 
 /* Botões */
