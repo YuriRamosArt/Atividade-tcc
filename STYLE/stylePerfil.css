@@ -133,7 +133,7 @@ body{
     align-items: center;
 
     min-height: 80vh;
-    padding: 50px;
+    padding: 190px;
 }
 
 .perfil-info {
@@ -160,12 +160,10 @@ body{
     display: flex;
     align-items: center;
     gap: 10px;
-
     background: #4f86c6;
     color: white;
     border: none;
     border-radius: 5px;
-
     padding: 10px 15px;
     cursor: pointer;
 }
