@@ -17,8 +17,9 @@ header {
   background: black;
   color: white;
   text-align: center;
-  padding: 5px;
+  padding: 13px;
   font-size: 14px;
+  height: 44px;
 }
 
 /* Header principal */
