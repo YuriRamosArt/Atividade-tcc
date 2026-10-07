@@ -131,9 +131,9 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     min-height: 80vh;
     padding: 190px;
+   
 }
 
 .perfil-info {
@@ -176,7 +176,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 20px;
-   margin-right: 500px;
+   margin-right: 400px;
 }
 
 .opcao {
