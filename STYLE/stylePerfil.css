@@ -176,7 +176,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 20px;
-   margin-right: 400px;
+   margin-right: 200px;
 }
 
 .opcao {
