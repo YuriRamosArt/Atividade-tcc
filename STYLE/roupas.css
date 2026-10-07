@@ -32,7 +32,7 @@ header {
   background: linear-gradient(to right, #BEE6FF, #709AB3, #181818);
   padding: 10px 20px;
   overflow: hidden;
-  height: 70px;
+  height: 80px;
 }
 .left {
   display: flex;
