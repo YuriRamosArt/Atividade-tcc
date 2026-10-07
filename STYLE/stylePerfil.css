@@ -143,7 +143,7 @@ body{
 }
 
 .perfil-info img {
-    width: 120px;
+    width: 170px;
 }
 
 .perfil-info h2 {
@@ -161,7 +161,7 @@ body{
     align-items: center;
     gap: 10px;
     background: #4f86c6;
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 5px;
     padding: 15px 30px;
@@ -200,4 +200,10 @@ body{
 .opcao span {
     flex: 1;
     text-align: center;
+}
+
+.perfil-info button a, 
+.perfil-info a {
+    text-decoration: none !important;
+    color: inherit;
 }
