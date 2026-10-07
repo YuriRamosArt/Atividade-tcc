@@ -132,7 +132,8 @@ body{
     justify-content: space-between;
     align-items: center;
     min-height: 80vh;
-    padding: 190px;
+    padding: 130px;
+    margin-top: -130px;
    
 }
 
