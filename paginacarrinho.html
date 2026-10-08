@@ -42,97 +42,144 @@
         </div>
   </header>
 
-    <div class="main-container">
-        
-        <!-- Lista de Produtos Omitindo o Header -->
-        <div class="cart-items">
-            
+   <main class="carrinho-page">
+
+        <!-- PRODUTOS -->
+        <section class="produtos">
+
             <!-- Produto 1 -->
-            <div class="product-card">
-                <div class="product-image">DARKLAB</div>
-                <div class="product-details">
-                    <div class="product-name">DARKLAB coqueteleira - 900ml</div>
-                    <div class="product-price">R$69,99</div>
+            <div class="produto">
+
+                <div class="produto-imagem">
+                    <img src="img/coqueteleira.png" alt="Coqueteleira Darklab">
                 </div>
-                <div class="quantity-actions">
-                    <div class="quantity-controls">
-                        <button class="qty-btn">+</button>
-                        <span class="qty-number">1</span>
-                        <button class="qty-btn">-</button>
+
+                <div class="produto-info">
+                    <h2>DARKLAB coqueteleira<br>- 900ml</h2>
+                    <span class="preco">R$69,99</span>
+                </div>
+
+                <div class="produto-controle">
+                    <div class="quantidade">
+                        <button>+</button>
+                        <span>1</span>
+                        <button>-</button>
                     </div>
-                    <button class="remove-btn">Remover</button>
+
+                    <button class="remover">REMOVER</button>
                 </div>
+
             </div>
+
 
             <!-- Produto 2 -->
-            <div class="product-card">
-                <div class="product-image">GALÃODUX</div>
-                <div class="product-details">
-                    <div class="product-name">GALÃODUX- de água - 1,8L</div>
-                    <div class="product-price">R$49,99</div>
+            <div class="produto">
+
+                <div class="produto-imagem">
+                    <img src="img/whey.png" alt="Whey">
                 </div>
-                <div class="quantity-actions">
-                    <div class="quantity-controls">
-                        <button class="qty-btn">+</button>
-                        <span class="qty-number">1</span>
-                        <button class="qty-btn">-</button>
+
+                <div class="produto-info">
+                    <h2>GALÃODUX- de água-<br>1,8L</h2>
+                    <span class="preco">R$49,99</span>
+                </div>
+
+                <div class="produto-controle">
+                    <div class="quantidade">
+                        <button>+</button>
+                        <span>1</span>
+                        <button>-</button>
                     </div>
-                    <button class="remove-btn">Remover</button>
+
+                    <button class="remover">REMOVER</button>
                 </div>
+
             </div>
+
 
             <!-- Produto 3 -->
-            <div class="product-card">
-                <div class="product-image">MAX WHEY</div>
-                <div class="product-details">
-                    <div class="product-name">MAX WHEY baunilha - 900 g</div>
-                    <div class="product-price">R$29,99</div>
+            <div class="produto">
+
+                <div class="produto-imagem">
+                    <img src="img/shaker.png" alt="Max Whey">
                 </div>
-                <div class="quantity-actions">
-                    <div class="quantity-controls">
-                        <button class="qty-btn">+</button>
-                        <span class="qty-number">1</span>
-                        <button class="qty-btn">-</button>
+
+                <div class="produto-info">
+                    <h2>MAX WHEY baunilha -<br>900 g</h2>
+                    <span class="preco">R$29,99</span>
+                </div>
+
+                <div class="produto-controle">
+                    <div class="quantidade">
+                        <button>+</button>
+                        <span>1</span>
+                        <button>-</button>
                     </div>
-                    <button class="remove-btn">Remover</button>
+
+                    <button class="remover">REMOVER</button>
                 </div>
+
             </div>
 
-        </div>
+        </section>
 
-        <!-- Formulário de Finalização -->
-        <div class="checkout-form">
-            <h1 class="checkout-title">CARRINHO <span>DA AYSI</span></h1>
-            
-            <div class="input-group">
-                <label>EMAIL</label>
-                <input type="email">
-            </div>
 
-            <div class="input-group">
-                <label>SENHA</label>
-                <input type="password">
-            </div>
+        <!-- CHECKOUT -->
+        <section class="checkout">
 
-            <div class="row-inputs">
-                <div class="input-group w-30">
-                    <label>N°</label>
+            <h1>
+                CARRINHO
+                <span>DA AYSI</span>
+            </h1>
+
+            <form>
+
+                <input
+                    type="email"
+                    placeholder="EMAIL"
+                >
+
+                <input
+                    type="password"
+                    placeholder="SENHA"
+                >
+
+                <div class="documentos">
+
                     <select>
-                        <option value=""></option>
+                        <option value="">N°</option>
+                        <option>1</option>
+                        <option>2</option>
                     </select>
-                </div>
-                <div class="input-group w-70">
-                    <label>CPF</label>
-                    <input type="text">
-                </div>
-            </div>
-            <div class="select-subtext">*selecione</div>
 
-            <button class="btn-payment">Formas de Pagamento</button>
-            <button class="btn-finalize">Finalizar Compra</button>
-        </div>
+                    <input
+                        type="text"
+                        placeholder="CPF"
+                    >
 
-    </div>
+                </div>
+
+                <small>*selecione</small>
+
+                <button
+                    type="button"
+                    class="pagamento"
+                >
+                    FORMAS DE PAGAMENTO
+                </button>
+
+                <button
+                    type="submit"
+                    class="finalizar"
+                >
+                    FINALIZAR COMPRA
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
     
 </body>
 </html>
