@@ -67,7 +67,7 @@
                         <button onclick="aumentar(this)">+</button>
                     </div>
 
-                    <button class="compra" onclick="abrirProduto(this)">
+                    <button class="compra" onclick="abrirProduto('wheyMax')">
 
                         Comprar
                     </button>
@@ -214,38 +214,55 @@
 
     </section>
 
-   <div class="modal" id="modal">
+    <div class="modal" id="modal">
 
 
-    <div class="modal-content">
+        <div class="modal-conteudo">
 
-        <span class="fechar" onclick="fecharModal()">&times;</span>
+            <span class="fechar" onclick="fecharModal()">&times;</span>
 
-        <div class="imagens">
-            <img id="modalImg">
+            <div class="imagens">
+                <img id="modalImg">
 
-            <div class="img-minaturas">
-                
+                <div class="img-minaturas">
+                    <img id="mini1" src="" onclick="trocarImagem(this)">
+                    <img id="mini2" src="" onclick="trocarImagem(this)">
+                    <img id="mini3" src="" onclick="trocarImagem(this)">
+                </div>
+
+            </div>
+
+            <div class="informacoes-produto">
+                <h2 id="nomeProduto"></h2>
+
+                <div class="preco">
+                    <p id="precoProduto"></p>
+                    <span>no pix</span>
+                </div>
+
+                <p id="parcelamento"></p>
+
+                <div class="quantidade-modal">
+                    <button onclick="diminuirModal()">-</button>
+                    <input type="text" id="qtdModal" value="1">
+                    <button onclick="aumentarModal()">+</button>
+                </div>
+
+                <button class="compra-modal" onclick="abrirProduto(this)">
+                    comprar
+                </button>
+
+            </div>
+
+            <div class="descricao-produto">
+                <h3>Descrição</h3>
+                <p id="desProduto"></p>
+                <p id="detProduto"></p>
             </div>
 
         </div>
-        
-        <h2 id="modalNome"></h2>
-        <p id="modalPreco"></p>
 
-        <div class="quantidade-modal">
-
-            <button onclick="diminuirModal()">-</button>
-            
-            <input type="text" id="qtdModal" value="1">
-
-            <button onclick="aumentarModal()">+</button>
-
-        </div>
-        <button onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
     </div>
-
-   </div>
 
   <footer>
     <div class="footer-content">
@@ -280,7 +297,7 @@
 
       </div>
     </div>
-    <script src="./BACK/suplementos.js"></script>
+    <script src="/teste.js"></script>
   </footer>
 </body>
 </html>
