@@ -31,6 +31,7 @@ body {
     flex-direction: column;
     gap: 28px;
     padding-top: 0;
+    margin-top: 150px;
 }
 
 
@@ -125,6 +126,7 @@ body {
 
 .checkout {
     padding-top: 8px;
+    margin-top: 150px;
 }
 
 .checkout h1 {
