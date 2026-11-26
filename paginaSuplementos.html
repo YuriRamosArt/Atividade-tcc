@@ -4,125 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Suplementos</title>
-    
+
     <link rel="stylesheet" href="./STYLE/styleSuplementos.css">
     <link rel="shortcut icon" href="./IMAGENS/Logo.png" type="image/x-icon">
 </head>
-    <header>
-    <div class="top-bar">
-      frete gratis
-    </div>
-
-    <div class="main-header">
-      <div class="left">
-        <img src="./IMAGENS/Logo.png" class="logo">
-        <img src="./IMAGENS/MENU.png" class="menu-icon">
-
-        <nav>
-          <a href="./paginainicial.html" class="pag">inicio</a>
-          <a href="./paginaAcessórios.html" class="pag">acessórios</a>
-          <a href="./roupas.html" class="pag">roupas</a>
-          <a href="./paginaSuplementos.html" class="pag">suplementos</a>
-        </nav>
-      </div>
-
-      <div class="right">
-        <div class="search-box">
-          <img src="./IMAGENS/Search.png" class="lupa">
-          <input type="text" placeholder="Pesquisar...">
-        </div>
-
-        <div class="icons">
-          <img src="./IMAGENS/carrinho2.png" class="icon">
-          <a href="login.html">
-          <img src="./IMAGENS/login2.png" class="icon">
-          </a>
-        </div>
-    </header>
 
 <body>
 
-    <!-- Banner -->
+    <header>
+        <div class="top-bar">
+            frete gratis
+        </div>
+
+        <div class="main-header">
+            <div class="left">
+                <img src="./IMAGENS/Logo.png" class="logo" alt="Logo AYSI">
+                <img src="./IMAGENS/MENU.png" class="menu-icon" alt="Menu">
+
+                <nav>
+                    <a href="./paginainicial.html" class="pag">inicio</a>
+                    <a href="./paginaAcessórios.html" class="pag">acessórios</a>
+                    <a href="./roupas.html" class="pag">roupas</a>
+                    <a href="./paginaSuplementos.html" class="pag">suplementos</a>
+                </nav>
+            </div>
+
+            <div class="right">
+                <div class="search-box">
+                    <img src="./IMAGENS/Search.png" class="lupa" alt="Pesquisar">
+                    <input type="text" placeholder="Pesquisar...">
+                </div>
+
+                <div class="icons">
+                    <a href="./paginacarrinho.html" class="link-carrinho">
+                        <img src="./IMAGENS/carrinho2.png" class="icon" alt="Carrinho">
+                        <span id="contadorCarrinho">0</span>
+                    </a>
+
+                    <a href="./login.html">
+                        <img src="./IMAGENS/login2.png" class="icon" alt="Login">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <section class="banner">
         <h1>SUPLE<span class="metadeBanner">MENTOS</span></h1>
     </section>
 
-    <!-- Produtos -->
     <section class="container-cards">
 
-        <!-- Card -->
         <div class="cards">
 
             <img class="produto imgC" src="./IMAGENS/wheyMax.png" alt="Whey Max">
 
             <div class="descricao">
-                <h1 class="titulo">MAXWHEY baunilha - 900 g </h1>
+                <h1 class="titulo">MAXWHEY baunilha - 900 g</h1>
                 <p class="preco">R$90,99</p>
-            
+
                 <div class="area-compra">
 
-                      <div class="quantidade">
-                        <button onclick="diminuir(this)">-</button>
-                        <input type="text" value="1">
-                        <button onclick="aumentar(this)">+</button>
+                    <div class="quantidade">
+                        <button type="button" onclick="diminuir(this)">-</button>
+                        <input type="text" value="1" min="1" max="99">
+                        <button type="button" onclick="aumentar(this)">+</button>
                     </div>
 
-                    <button class="compra" onclick="abrirProduto('wheyMax')">
-
+                    <button class="compra" type="button" onclick="abrirProduto('wheyMax')">
                         Comprar
                     </button>
                 </div>
-                    
+
             </div>
 
         </div>
 
-        <!-- Card -->
         <div class="cards">
 
             <img class="produto imgG" src="./IMAGENS/wheyFresh.png" alt="Whey Fresh">
 
             <div class="descricao">
-                <h1 class="titulo">FRESHWHEY chocolate e avelã- pote 900 g</h1>
+                <h1 class="titulo">FRESHWHEY chocolate e avelã - pote 900 g</h1>
                 <p class="preco">R$110,99</p>
-            
+
                 <div class="area-compra">
 
                     <div class="quantidade">
-                        <button onclick="diminuir(this)">-</button>
-                        <input type="text" value="1">
-                        <button onclick="aumentar(this)">+</button>
+                        <button type="button" onclick="diminuir(this)">-</button>
+                        <input type="text" value="1" min="1" max="99">
+                        <button type="button" onclick="aumentar(this)">+</button>
                     </div>
 
-                    <button class="compra" onclick="abrirProduto('wheyFresh')">
-
+                    <button class="compra" type="button" onclick="abrirProduto('wheyFresh')">
                         Comprar
                     </button>
                 </div>
-                    
+
             </div>
 
         </div>
 
-        <!-- Card -->
         <div class="cards">
 
             <img class="produto imgM" src="./IMAGENS/creatina.png" alt="Creatina">
 
             <div class="descricao">
-                <h1 class="titulo">DARKLAB creatina - 350 g </h1>
+                <h1 class="titulo">DARKLAB creatina - 350 g</h1>
                 <p class="preco">R$49,99</p>
 
                 <div class="area-compra">
 
                     <div class="quantidade">
-                        <button onclick="diminuir(this)">-</button>
-                        <input type="text" value="1">
-                        <button onclick="aumentar(this)">+</button>
+                        <button type="button" onclick="diminuir(this)">-</button>
+                        <input type="text" value="1" min="1" max="99">
+                        <button type="button" onclick="aumentar(this)">+</button>
                     </div>
 
-                    <button class="compra" onclick="abrirProduto(this)">
-
+                    <button class="compra" type="button" onclick="abrirProduto('creatina')">
                         Comprar
                     </button>
                 </div>
@@ -131,25 +130,23 @@
 
         </div>
 
-        <!-- Card -->
         <div class="cards">
 
-            <img class="produto imgB" src="./IMAGENS/cafeina.png" alt="Caféina">
+            <img class="produto imgB" src="./IMAGENS/cafeina.png" alt="Cafeína">
 
             <div class="descricao">
-                <h1 class="titulo">GROWTH-cafeína         200mg</h1>
+                <h1 class="titulo">GROWTH cafeína 200 mg</h1>
                 <p class="preco">R$49,99</p>
 
                 <div class="area-compra">
 
                     <div class="quantidade">
-                        <button onclick="diminuir(this)">-</button>
-                        <input type="text" value="1">
-                        <button onclick="aumentar(this)">+</button>
+                        <button type="button" onclick="diminuir(this)">-</button>
+                        <input type="text" value="1" min="1" max="99">
+                        <button type="button" onclick="aumentar(this)">+</button>
                     </div>
-                    
-                    <button class="compra" onclick="abrirProduto('cafeina')">
 
+                    <button class="compra" type="button" onclick="abrirProduto('cafeina')">
                         Comprar
                     </button>
                 </div>
@@ -158,25 +155,23 @@
 
         </div>
 
-        <!-- Card -->
         <div class="cards">
 
             <img class="produto imgE" src="./IMAGENS/dark_raze.png" alt="Dark Raze">
 
             <div class="descricao">
-                <h1 class="titulo">DARKLAB raze prétreino - 350g</h1>
+                <h1 class="titulo">DARKLAB raze pré-treino - 350 g</h1>
                 <p class="preco">R$59,99</p>
-            
+
                 <div class="area-compra">
 
                     <div class="quantidade">
-                        <button onclick="diminuir(this)">-</button>
-                        <input type="text" value="1">
-                        <button onclick="aumentar(this)">+</button>
+                        <button type="button" onclick="diminuir(this)">-</button>
+                        <input type="text" value="1" min="1" max="99">
+                        <button type="button" onclick="aumentar(this)">+</button>
                     </div>
-                   
-                    <button class="compra" onclick="abrirProduto('raze')">
 
+                    <button class="compra" type="button" onclick="abrirProduto('raze')">
                         Comprar
                     </button>
                 </div>
@@ -185,25 +180,23 @@
 
         </div>
 
-        <!-- Card -->
         <div class="cards">
 
-            <img class="produto imgS" src="./IMAGENS/wheyFreshMorango.png" alt="whey Fresh Morango">
+            <img class="produto imgS" src="./IMAGENS/wheyFreshMorango.png" alt="Whey Fresh Morango">
 
             <div class="descricao">
                 <h1 class="titulo">FRESHWHEY frutas vermelhas - pote 900 g</h1>
                 <p class="preco">R$110,99</p>
-            
+
                 <div class="area-compra">
 
                     <div class="quantidade">
-                        <button onclick="diminuir(this)">-</button>
-                        <input type="text" value="1">
-                        <button onclick="aumentar(this)">+</button>
+                        <button type="button" onclick="diminuir(this)">-</button>
+                        <input type="text" value="1" min="1" max="99">
+                        <button type="button" onclick="aumentar(this)">+</button>
                     </div>
 
-                    <button class="compra" onclick="abrirProduto('wheyFreshMorango')">
-
+                    <button class="compra" type="button" onclick="abrirProduto('wheyFreshMorango')">
                         Comprar
                     </button>
                 </div>
@@ -216,18 +209,17 @@
 
     <div class="modal" id="modal">
 
-
         <div class="modal-conteudo">
 
             <span class="fechar" onclick="fecharModal()">&times;</span>
 
             <div class="imagens">
-                <img id="modalImg">
+                <img id="modalImg" src="" alt="Imagem do produto">
 
                 <div class="img-minaturas">
-                    <img id="mini1" src="" onclick="trocarImagem(this)">
-                    <img id="mini2" src="" onclick="trocarImagem(this)">
-                    <img id="mini3" src="" onclick="trocarImagem(this)">
+                    <img id="mini1" src="" alt="Imagem 1" onclick="trocarImagem(this)">
+                    <img id="mini2" src="" alt="Imagem 2" onclick="trocarImagem(this)">
+                    <img id="mini3" src="" alt="Imagem 3" onclick="trocarImagem(this)">
                 </div>
 
             </div>
@@ -243,13 +235,13 @@
                 <p id="parcelamento"></p>
 
                 <div class="quantidade-modal">
-                    <button onclick="diminuirModal()">-</button>
-                    <input type="text" id="qtdModal" value="1">
-                    <button onclick="aumentarModal()">+</button>
+                    <button type="button" onclick="diminuirModal()">-</button>
+                    <input type="text" id="qtdModal" value="1" min="1" max="99">
+                    <button type="button" onclick="aumentarModal()">+</button>
                 </div>
 
-                <button class="compra-modal" onclick="abrirProduto(this)">
-                    comprar
+                <button class="compra-modal" type="button" onclick="adicionarProdutoCarrinho()">
+                    Comprar
                 </button>
 
             </div>
@@ -264,40 +256,49 @@
 
     </div>
 
-  <footer>
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3>AYSI</h3>
-      <p>A Aysi é uma empresa
-      de suplementos alimentares
-      que busca oferecer produtos
-      de alta qualidade e eficácia para 
-      atletas, praticantes de atividades
-      físicas e pessoas que buscam uma 
-      vida mais saudável.</p>
-      <p>ASIY &copy; 2026. Todos os direitos reservados.</p>
-      </div>
+    <footer>
+        <div class="footer-content">
 
-      <div class="footer-section">
-        <h3>Links Rápidos</h3>
-        <ul>
-          <li><a href="./paginainicial.html">Início</a></li>
-          <li><a href="./paginaAcessórios.html">Acessórios</a></li>
-          <li><a href="./roupas.html">Roupas</a></li>
-          <li><a href="./paginaSuplementos.html">Suplementos</a></li>
-        </ul>
-      </div>
+            <div class="footer-section">
+                <h3>AYSI</h3>
 
-      <div class="footer-section">
-        <h3>Contato</h3>
-        <p>Email: contato@aysi.com</p>
-        <p>Telefone: (11) 1234-5678</p>
-        <p>Formas de Pagamento</p>
-        <img src="IMAGENS/image 271formasdepagamento (1).png" alt="pagamentosFormas" class="pagamento-icon">
+                <p>A Aysi é uma empresa
+                de suplementos alimentares
+                que busca oferecer produtos
+                de alta qualidade e eficácia para
+                atletas, praticantes de atividades
+                físicas e pessoas que buscam uma
+                vida mais saudável.</p>
 
-      </div>
-    </div>
+                <p>AYSI &copy; 2026. Todos os direitos reservados.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+
+                <ul>
+                    <li><a href="./paginainicial.html">Início</a></li>
+                    <li><a href="./paginaAcessórios.html">Acessórios</a></li>
+                    <li><a href="./roupas.html">Roupas</a></li>
+                    <li><a href="./paginaSuplementos.html">Suplementos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contato</h3>
+
+                <p>Email: contato@aysi.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Formas de Pagamento</p>
+
+                <img src="./IMAGENS/image 271formasdepagamento (1).png" alt="Formas de pagamento" class="pagamento-icon">
+
+            </div>
+
+        </div>
+    </footer>
+
     <script src="./BACK/suplementos.js"></script>
-  </footer>
+
 </body>
 </html>
