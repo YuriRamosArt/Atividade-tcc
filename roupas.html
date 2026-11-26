@@ -60,8 +60,7 @@
                         <input type="text" value="1">
                         <button onclick="aumentar(this)">+</button>
                     </div>
-
-                 <button class="compra" onclick="abrirProduto(this)">
+                 <button class="compra" onclick="abrirProduto('berserk')">
                     Comprar
                     </button>
                 </div>  
@@ -84,7 +83,7 @@
                         <button onclick="aumentar(this)">+</button>
                     </div>
 
-                    <button class="compra" onclick="abrirProduto(this)">
+                    <button class="compra" onclick="abrirProduto('legDay')">
                         Comprar
                     </button>
                 </div>
@@ -107,7 +106,7 @@
                         <button onclick="aumentar(this)">+</button>
                     </div>
 
-                    <button class="compra" onclick="abrirProduto(this)">
+                    <button class="compra" onclick="abrirProduto('kitRoupa')">
                         Comprar
                     </button>
                 </div>
@@ -130,7 +129,7 @@
                         <button onclick="aumentar(this)">+</button>
                     </div>
 
-                    <button class="compra" onclick="abrirProduto(this)">
+                    <button class="compra" onclick="abrirProduto('kitFitnese')">
                         Comprar
                     </button>
                 </div>
@@ -155,7 +154,7 @@
                     <button onclick="aumentar(this)">+</button>
                 </div>
 
-                <button class="compra" onclick="abrirProduto(this)">
+                <button class="compra" onclick="abrirProduto('legging')">
                         Comprar
                 </button>
                 </div>
@@ -178,7 +177,7 @@
                     <button onclick="aumentar(this)">+</button>
                 </div>
 
-                <button class="compra" onclick="abrirProduto(this)">
+                <button class="compra" onclick="abrirProduto('conjuntoPreto')">
                         Comprar
                 </button>
                 </div>
@@ -201,7 +200,7 @@
                     <button onclick="aumentar(this)">+</button>
                 </div>
 
-                <button class="compra" onclick="abrirProduto(this)">
+                <button class="compra" onclick="abrirProduto('conjuntoBlue')">
                         Comprar
                 </button>
                 </div>
@@ -224,7 +223,7 @@
                     <button onclick="aumentar(this)">+</button>
                 </div>
 
-                <button class="compra" onclick="abrirProduto(this)">
+                <button class="compra" onclick="abrirProduto('camisetaPreta')">
                         Comprar
                 </button>
                 </div>
@@ -232,35 +231,102 @@
         </div>
     </section>
 
-    <div class="modal" id="modal">
+
+<!-- MODAL DO PRODUTO -->
+<div class="modal" id="modal">
 
     <div class="modal-content">
 
+        <!-- BOTÃO FECHAR -->
         <span class="fechar" onclick="fecharModal()">&times;</span>
 
-        <img id="modalImg">
+        <!-- GALERIA DE IMAGENS -->
+        <div class="galeria-modal">
 
-        <h2 id="modalNome"></h2>
+            <div class="imagem-principal">
+                <img id="modalImg" src="" alt="Imagem do produto">
+            </div>
 
-        <p id="modalPreco"></p>
+            <div class="miniaturas">
 
-        <div class="quantidade-modal">
+                <img
+                    id="mini1"
+                    src=""
+                    alt="Miniatura 1"
+                    onclick="trocarImagem(this)"
+                >
 
-            <button onclick="diminuirModal()">-</button>
+                <img
+                    id="mini2"
+                    src=""
+                    alt="Miniatura 2"
+                    onclick="trocarImagem(this)"
+                >
 
-            <input type="text" id="qtdModal" value="1">
+                <img
+                    id="mini3"
+                    src=""
+                    alt="Miniatura 3"
+                    onclick="trocarImagem(this)"
+                >
 
-            <button onclick="aumentarModal()">+</button>
+            </div>
 
         </div>
 
-        <button onclick="adicionarCarrinho()">
-            Adicionar ao Carrinho
-        </button>
+        <!-- INFORMAÇÕES DO PRODUTO -->
+        <div class="informacoes-modal">
+
+            <h2 id="nomeProduto"></h2>
+
+            <p id="precoProduto"></p>
+
+            <p id="parcelamento"></p>
+
+            <!-- QUANTIDADE -->
+            <div class="quantidade-modal">
+
+                <button onclick="diminuirModal()">-</button>
+
+                <input
+                    type="text"
+                    id="qtdModal"
+                    value="1"
+                    readonly
+                >
+
+                <button onclick="aumentarModal()">+</button>
+
+            </div>
+
+            <!-- BOTÃO CARRINHO -->
+            <button
+                class="adicionar-carrinho"
+                onclick="adicionarCarrinho()"
+            >
+                ADICIONAR AO CARRINHO
+            </button>
+
+        </div>
+
+        <!-- DESCRIÇÃO -->
+        <div class="descricao-modal">
+
+            <div class="titulo-descricao">
+                DESCRIÇÃO
+            </div>
+
+            <p id="desProduto"></p>
+
+            <div class="detalhes-descricao">
+                <p id="detProduto"></p>
+            </div>
+
+        </div>
 
     </div>
 
-    </div>
+</div>
 
      <footer>
     <div class="footer-content">

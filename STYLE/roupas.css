@@ -319,102 +319,505 @@ footer::after{
     margin-top: 40px;
 }
 
-.modal{
+
+
+/* =========================================
+   MODAL PRINCIPAL
+========================================= */
+
+.modal {
     display: none;
     position: fixed;
-    top: 0;
-    left: 0;
+    inset: 0;
+
     width: 100%;
     height: 100vh;
-    background: rgba(0,0,0,0.1);
+
+    background: rgba(0, 0, 0, 0.45);
+
     justify-content: center;
     align-items: center;
+
+    padding: 20px;
+
     z-index: 9999;
+    overflow-y: auto;
 }
 
-/* QUANDO ABRIR */
-.modal.ativo{
+/* MODAL ATIVO */
+
+.modal.ativo {
     display: flex;
 }
 
-/* CARD DO MODAL */
-.modal-content{
-    width: 420px;
-    background: white;
-    padding: 25px;
-    border-radius: 20px;
-    text-align: center;
+/* =========================================
+   CONTEÚDO DO MODAL
+========================================= */
+
+.modal-content {
     position: relative;
-    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+
+    width: 720px;
+    max-width: 100%;
+
+    background: #E9E9E1;
+
+    padding: 16px;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.35);
+
+    display: grid;
+
+    grid-template-columns: 260px minmax(0, 1fr);
+    grid-template-rows: auto auto;
+
+    column-gap: 25px;
+    row-gap: 12px;
+
+    align-items: center;
+
+    text-align: left;
 }
 
-/* IMAGEM */
-.modal-content img{
-    width: 220px;
-    height: 220px;
-    object-fit: contain;
-}
+/* =========================================
+   BOTÃO FECHAR
+========================================= */
 
-/* BOTÃO FECHAR */
-.fechar{
+.fechar {
     position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 30px;
+
+    top: 8px;
+    right: 13px;
+
+    font-size: 28px;
+    line-height: 1;
+
+    color: #181818;
+
     cursor: pointer;
+
+    z-index: 10;
+    transition: 0.3s;
+}
+
+.fechar:hover {
+    color: #168BC1;
+}
+
+/* =========================================
+   GALERIA DE IMAGENS
+========================================= */
+
+.galeria-modal {
+    grid-column: 1;
+    grid-row: 1;
+
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+    align-items: stretch;
+
+    gap: 10px;
+}
+
+/* IMAGEM PRINCIPAL */
+
+.imagem-principal {
+    flex: 1;
+    min-width: 0;
+
+    height: 200px;
+
+    background: #FFFFFF;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.imagem-principal img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    padding: 8px;
+}
+
+/* MINIATURAS */
+
+.miniaturas {
+    width: 60px;
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    gap: 7px;
+}
+
+.miniaturas img {
+    width: 60px;
+    height: 60px;
+
+    object-fit: contain;
+
+    background: #FFFFFF;
+
+    border-radius: 7px;
+    padding: 4px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.miniaturas img:hover {
+    border: 2px solid #709AB3;
+    transform: scale(1.04);
+}
+
+/* =========================================
+   INFORMAÇÕES DO PRODUTO
+========================================= */
+
+.informacoes-modal {
+    grid-column: 2;
+    grid-row: 1;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 5px;
+
+    padding-right: 12px;
+    padding-top: 15px;
+}
+
+/* NOME */
+
+#nomeProduto {
+    font-size: 21px;
+    font-weight: 500;
+
+    color: #181818;
+
+    margin: 0 20px 2px 0;
+}
+
+/* PREÇO */
+
+#precoProduto {
+    font-size: 25px;
+    font-weight: 600;
+
+    color: #168BC1;
+
+    margin: 0;
+}
+
+/* PARCELAMENTO */
+
+#parcelamento {
+    font-size: 12px;
+    font-weight: 400;
+
+    color: #181818;
+
+    margin: 0 0 5px;
+}
+
+/* =========================================
+   QUANTIDADE
+========================================= */
+
+.quantidade-modal {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 0;
+
+    margin: 3px 0 8px;
+}
+
+.quantidade-modal button {
+    width: 25px;
+    height: 24px;
+
+    margin: 0;
+
+    border: none;
+    border-radius: 3px;
+
+    background: #BEE6FF;
+
+    color: #181818;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.quantidade-modal button:hover {
+    background: #709AB3;
+    color: white;
+}
+
+.quantidade-modal input {
+    width: 30px;
+    height: 24px;
+
+    margin: 0;
+
+    border: none;
+    border-left: 1px solid #181818;
+    border-right: 1px solid #181818;
+
+    border-radius: 0;
+
+    background: #BEE6FF;
+
+    text-align: center;
+
+    font-size: 15px;
+    font-weight: 600;
+
     color: #181818;
 }
-.fechar:hover{
-    color: #0941bb;
-    transition: 0.3s;
-}
 
-/* BOTÃO DO MODAL */
-.modal-content button{
-    margin-top: 15px;
+/* =========================================
+   BOTÃO ADICIONAR AO CARRINHO
+========================================= */
+
+.adicionar-carrinho {
     width: 100%;
-    height: 45px;
+    height: 40px;
+
+    margin: 0;
+
     border: none;
-    border-radius: 10px;
+    border-radius: 6px;
+
     background: #BEE6FF;
-    font-weight: bold;
+
+    color: #181818;
+
+    font-size: 15px;
+    font-weight: 700;
+
     cursor: pointer;
-}
-.modal-content button:hover{
-    background-color: #b8e7ff;
-    color: #ffffff;
+
     transition: 0.3s;
 }
 
-.quantidade-modal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin: 15px 0;
+.adicionar-carrinho:hover {
+    background: #709AB3;
+    color: #FFFFFF;
 }
 
-.quantidade-modal button{
-    width: 40px;
-    height: 35px;
-    border: none;
-    border-radius: 8px;
+/* =========================================
+   DESCRIÇÃO INFERIOR
+========================================= */
+
+.descricao-modal {
+    grid-column: 1 / 3;
+    grid-row: 2;
+
+    width: 100%;
+    min-height: 48px;
+
     background: #BEE6FF;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 20px;
+
+    border-radius: 7px;
+
+    display: grid;
+
+    grid-template-columns: 120px minmax(0, 1fr) 170px;
+
+    align-items: center;
+
+    overflow: hidden;
 }
 
-.quantidade-modal input{
-    width: 30px;
-    text-align: center;
-    border-radius: 6px;
-    border: none;
-    height: 35px;
+/* TÍTULO DA DESCRIÇÃO */
+
+.titulo-descricao {
+    height: 100%;
+    min-height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-right: 1px solid #181818;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    color: #181818;
 }
 
-#qtdModal{
-    font-size: 22px;
-    font-weight: 600;
-    margin-top: 15px;
+/* TEXTO DA DESCRIÇÃO */
+
+#desProduto {
+    padding: 7px 12px;
+
+    font-size: 11px;
+    line-height: 1.4;
+
+    color: #181818;
+
+    margin: 0;
+}
+
+/* DETALHES */
+
+.detalhes-descricao {
+    padding: 7px 10px;
+
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+#detProduto {
+    font-size: 10px;
+    line-height: 1.4;
+
+    color: #181818;
+
+    margin: 0;
+}
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .modal {
+        padding: 12px;
+    }
+
+    .modal-content {
+        width: 100%;
+        max-width: 420px;
+
+        padding: 15px;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+
+        gap: 15px;
+    }
+
+    .galeria-modal {
+        grid-column: 1;
+        grid-row: 1;
+
+        height: 190px;
+    }
+
+    .imagem-principal {
+        height: 190px;
+    }
+
+    .miniaturas {
+        width: 55px;
+    }
+
+    .miniaturas img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .informacoes-modal {
+        grid-column: 1;
+        grid-row: 2;
+
+        padding: 0;
+    }
+
+    #nomeProduto {
+        font-size: 19px;
+        padding-right: 15px;
+    }
+
+    #precoProduto {
+        font-size: 23px;
+    }
+
+    .adicionar-carrinho {
+        height: 43px;
+    }
+
+    .descricao-modal {
+        grid-column: 1;
+        grid-row: 3;
+
+        grid-template-columns: 1fr;
+
+        text-align: left;
+    }
+
+    .titulo-descricao {
+        min-height: 35px;
+
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+        justify-content: flex-start;
+        padding-left: 12px;
+    }
+
+    #desProduto {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+
+    .detalhes-descricao {
+        border-left: none;
+        border-top: 1px solid rgba(0, 0, 0, 0.15);
+
+        padding: 10px 12px;
+    }
+
+    #detProduto {
+        font-size: 11px;
+    }
+
+}
+
+/* CELULARES MUITO PEQUENOS */
+
+@media (max-width: 350px) {
+
+    .galeria-modal {
+        height: 160px;
+    }
+
+    .imagem-principal {
+        height: 160px;
+    }
+
+    .miniaturas img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .miniaturas {
+        width: 45px;
+    }
+
 }
