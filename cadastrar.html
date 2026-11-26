@@ -5,106 +5,219 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./STYLE/header.css">
     <link rel="stylesheet" href="./STYLE/cadastro.css">
-    <link rel="shortcut icon" href="./IMAGENS/Logo.png" type="image/x-icon">  
+    <link rel="stylesheet" href="./STYLE/styleFooter.css">
+    <link rel="shortcut icon" href="./IMAGENS/Logo.png" type="image/x-icon">
+
     <title>Cadastrar</title>
 </head>
+
+<body>
+
     <header>
-    <div class="top-bar">
-      frete gratis
-    </div>
-
-    <div class="main-header">
-      <div class="left">
-        <img src="./IMAGENS/Logo.png" class="logo">
-        <img src="./IMAGENS/MENU.png" class="menu-icon">
-
-        <nav>
-          <a href="./paginainicial.html" class="pag">inicio</a>
-          <a href="./paginaAcessórios.html" class="pag">acessórios</a>
-          <a href="./roupas.html" class="pag">roupas</a>
-          <a href="./paginaSuplementos.html" class="pag">suplementos</a>
-        </nav>
-      </div>
-
-      <div class="right">
-        <div class="search-box">
-          <img src="./IMAGENS/Search.png" class="lupa">
-          <input type="text" placeholder="Pesquisar...">
+        <div class="top-bar">
+            frete gratis
         </div>
 
-        <div class="icons">
-          <img src="./IMAGENS/carrinhodecompras.png" class="icon">
-          <a href="login.html">
-          <img src="./IMAGENS/LOGIN.png" class="icon">
-          </a>
-        </div> 
+        <div class="main-header">
+
+            <div class="left">
+                <img src="./IMAGENS/Logo.png" class="logo" alt="Logo AYSI">
+                <img src="./IMAGENS/MENU.png" class="menu-icon" alt="Menu">
+
+                <nav>
+                    <a href="./paginainicial.html" class="pag">inicio</a>
+                    <a href="./paginaAcessórios.html" class="pag">acessórios</a>
+                    <a href="./roupas.html" class="pag">roupas</a>
+                    <a href="./paginaSuplementos.html" class="pag">suplementos</a>
+                </nav>
+            </div>
+
+            <div class="right">
+
+                <div class="search-box">
+                    <img src="./IMAGENS/Search.png" class="lupa" alt="Pesquisar">
+                    <input type="text" placeholder="Pesquisar...">
+                </div>
+
+                <div class="icons">
+                    <img src="./IMAGENS/carrinhodecompras.png" class="icon" alt="Carrinho">
+
+                    <a href="login.html">
+                        <img src="./IMAGENS/LOGIN.png" class="icon" alt="Login">
+                    </a>
+                </div>
+
+            </div>
+        </div>
     </header>
-<body>
+
+    <!-- CADASTRO -->
+
     <div class="card">
+
         <h2>Cadastrar</h2>
-        <form>
+
+        <form id="formCadastro">
+
             <div class="input-group">
-                <label>Nome</label>
-                <input type="text" placeholder="Seu nome">
-            </div>
-            
-            <div class="input-group">
-                <label>Email</label>
-                <input type="email" placeholder="Seu email">
+                <label for="nome">Nome</label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Seu nome"
+                    autocomplete="name"
+                    required
+                >
             </div>
 
             <div class="input-group">
-                <label>Senha</label>
-                <input type="password" placeholder="Crie uma senha">
+                <label for="email">E-mail</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Seu e-mail"
+                    autocomplete="email"
+                    required
+                >
             </div>
 
             <div class="input-group">
-                <label>Confirmar senha</label>
-                <input type="password" placeholder="Repita a senha">
+                <label for="senha">Senha</label>
+
+                <div class="senha-container">
+
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        placeholder="Crie uma senha"
+                        minlength="8"
+                        autocomplete="new-password"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        class="olho-senha"
+                        id="mostrarSenha"
+                        aria-label="Mostrar senha"
+                    >
+                        <img
+                            src="./IMAGENS/olho-fechado.png"
+                            id="iconeOlhoSenha"
+                            alt=""
+                        >
+                    </button>
+
+                </div>
+
+                <small>Mínimo de 8 caracteres.</small>
             </div>
 
-            <button>Cadastrar</button>
+            <div class="input-group">
+                <label for="confirmarSenha">Confirmar senha</label>
+
+                <div class="senha-container">
+
+                    <input
+                        type="password"
+                        id="confirmarSenha"
+                        name="confirmarSenha"
+                        placeholder="Repita sua senha"
+                        minlength="8"
+                        autocomplete="new-password"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        class="olho-senha"
+                        id="mostrarConfirmarSenha"
+                        aria-label="Mostrar senha"
+                    >
+                        <img
+                            src="./IMAGENS/olhoFechado.png"
+                            id="iconeOlhoConfirmar"
+                            alt=""
+                        >
+                    </button>
+
+                </div>
+            </div>
+
+            <p id="mensagemCadastro" aria-live="polite"></p>
+
+            <button type="submit">
+                Cadastrar
+            </button>
+
         </form>
 
         <div class="login-link">
-            Já tem uma conta? <a href="./login.html">Entrar</a>
+            Já tem uma conta?
+            <a href="./login.html">Entrar</a>
         </div>
+
     </div>
-    <link rel="stylesheet" href="STYLE/styleFooter.css">
-  <!--RODAPÉ-->
- <footer>
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3>AYSI</h3>
-      <p>A Aysi é uma empresa
-      de suplementos alimentares
-      que busca oferecer produtos
-      de alta qualidade e eficácia para 
-      atletas, praticantes de atividades
-      físicas e pessoas que buscam uma 
-      vida mais saudável.</p>
-      <p>ASIY &copy; 2026. Todos os direitos reservados.</p>
-      </div>
 
-      <div class="footer-section">
-        <h3>Links Rápidos</h3>
-        <ul>
-          <li><a href="./paginainicial.html">Início</a></li>
-          <li><a href="paginaAcessórios.html">Acessórios</a></li>
-          <li><a href="./roupas.html">Roupas</a></li>
-          <li><a href="paginaSuplementos.html">Suplementos</a></li>
-        </ul>
-      </div>
+    <!-- RODAPÉ -->
 
-      <div class="footer-section">
-        <h3>Contato</h3>
-        <p>Email: contato@aysi.com</p>
-        <p>Telefone: (11) 1234-5678</p>
-        <p>Formas de Pagamento</p>
-        <img src="./IMAGENS/formasPagmento.png" alt="pagamentosFormas" class="pagamento-icon">
+    <footer>
 
-      </div>
-    </div>
-  </footer>
+        <div class="footer-content">
+
+            <div class="footer-section">
+
+                <h3>AYSI</h3>
+
+                <p>
+                    A Aysi é uma empresa de suplementos alimentares
+                    que busca oferecer produtos de alta qualidade e
+                    eficácia para atletas, praticantes de atividades
+                    físicas e pessoas que buscam uma vida mais saudável.
+                </p>
+
+                <p>ASIY &copy; 2026. Todos os direitos reservados.</p>
+
+            </div>
+
+            <div class="footer-section">
+
+                <h3>Links Rápidos</h3>
+
+                <ul>
+                    <li><a href="./paginainicial.html">Início</a></li>
+                    <li><a href="paginaAcessórios.html">Acessórios</a></li>
+                    <li><a href="./roupas.html">Roupas</a></li>
+                    <li><a href="paginaSuplementos.html">Suplementos</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-section">
+
+                <h3>Contato</h3>
+
+                <p>Email: contato@aysi.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Formas de Pagamento</p>
+
+                <img
+                    src="./IMAGENS/formasPagmento.png"
+                    alt="Formas de pagamento"
+                    class="pagamento-icon"
+                >
+
+            </div>
+
+        </div>
+
+    </footer>
+
 </body>
+<script src="./BACK/cadastrar.js" defer></script>
 </html>

@@ -1,107 +1,186 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./STYLE/header.css">
     <link rel="stylesheet" href="./STYLE/stylelogin.css">
     <link rel="shortcut icon" href="./IMAGENS/Logo.png" type="image/x-icon">
+
     <title>Login</title>
-  </head>
+</head>
+
+<body>
+
     <header>
-    <div class="top-bar">
-      frete gratis
-    </div>
-
-    <div class="main-header">
-      <div class="left">
-        <img src="./IMAGENS/Logo.png" class="logo">
-        <img src="./IMAGENS/MENU.png" class="menu-icon">
-
-        <nav>
-          <a href="./paginainicial.html" class="pag">inicio</a>
-          <a href="./paginaAcessórios.html" class="pag">acessórios</a>
-          <a href="./roupas.html" class="pag">roupas</a>
-          <a href="./paginaSuplementos.html" class="pag">suplementos</a>
-        </nav>
-      </div>
-
-      <div class="right">
-        <div class="search-box">
-          <img src="./IMAGENS/Search.png" class="lupa">
-          <input type="text" placeholder="Pesquisar...">
+        <div class="top-bar">
+            frete gratis
         </div>
 
-        <div class="icons">
-          <img src="./IMAGENS/carrinho2.png"ng class="icon">
-          <a href="./login.html">
-          <img src="./IMAGENS/login2.png" class="icon">
-          </a>
+        <div class="main-header">
+            <div class="left">
+                <img src="./IMAGENS/Logo.png" class="logo" alt="Logo AYSI">
+                <img src="./IMAGENS/MENU.png" class="menu-icon" alt="Menu">
+
+                <nav>
+                    <a href="./paginainicial.html" class="pag">inicio</a>
+                    <a href="./paginaAcessórios.html" class="pag">acessórios</a>
+                    <a href="./roupas.html" class="pag">roupas</a>
+                    <a href="./paginaSuplementos.html" class="pag">suplementos</a>
+                </nav>
+            </div>
+
+            <div class="right">
+                <div class="search-box">
+                    <img src="./IMAGENS/Search.png" class="lupa" alt="Pesquisar">
+                    <input type="text" placeholder="Pesquisar...">
+                </div>
+
+                <div class="icons">
+                    <img src="./IMAGENS/carrinho2.png" class="icon" alt="Carrinho">
+
+                    <a href="./login.html">
+                        <img src="./IMAGENS/login2.png" class="icon" alt="Login">
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
-<body>
-  <div class="login-card">
-    <img src="./IMAGENS/LOGIN.png" class="image">
 
-    <form>
-      <div class="input-group">
-        <label>Email</label>
-        <input type="email" placeholder="Digite seu email">
-      </div>
+    <div class="login-card">
 
-      <div class="input-group">
-        <label>Senha</label>
-        <input type="password" placeholder="Digite sua senha">
-      </div>
-      <!--BOTAO ENTRAR-->
-      <div class="login-button">
-      <a href="./perfi.html">Entrar</a>
-      </div>
-    </form>
-    <!--ESQUECEU A SENHA LINK-->
-    <div class="extra">
-      <a href="./EsqueceuaSenha.html">Esqueceu a senha?</a>
+        <img src="./IMAGENS/LOGIN.png" class="image" alt="Login">
+
+        <form id="formLogin">
+
+            <div class="input-group">
+                <label for="email">Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Digite seu email"
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="senha">Senha</label>
+
+                <div class="senha-container">
+                    <input
+                        type="password"
+                        id="senha"
+                        placeholder="Digite sua senha"
+                        minlength="8"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        class="olho-senha"
+                        id="mostrarSenha"
+                        aria-label="Mostrar senha"
+                    >
+                        <img
+                            src="./IMAGENS/olhoFechado.png"
+                            id="iconeOlho"
+                            alt=""
+                        >
+                    </button>
+                </div>
+            </div>
+
+            <div id="mensagemLogin"></div>
+
+            <div class="login-button">
+                <button type="submit">Entrar</button>
+            </div>
+
+            <div id="areaVerificacao" hidden>
+
+                <p>Seu e-mail precisa ser verificado.</p>
+
+                <button type="button" id="enviarCodigo">
+                    Enviar código de verificação
+                </button>
+
+                <div class="input-group">
+                    <label for="codigo">Código recebido no e-mail</label>
+
+                    <input
+                        type="text"
+                        id="codigo"
+                        placeholder="Digite o código"
+                        maxlength="6"
+                    >
+                </div>
+
+                <button type="button" id="verificarCodigo">
+                    Confirmar e-mail
+                </button>
+
+            </div>
+
+        </form>
+
+        <div class="extra">
+            <a href="./EsqueceuaSenha.html">Esqueceu a senha?</a>
+        </div>
+
+        <div class="cadastro">
+            <a href="./cadastrar.html">Não tem uma conta? Cadastrar</a>
+        </div>
+
     </div>
-    <!--LINK CADASTRO-->
-    <div class="cadastro">
-      <a href="./cadastrar.html">Não tem uma conta? Cadastrar</a>    
-    </div> 
-  </div>
-    
-  
-  <footer>
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3>AYSI</h3>
-      <p>A Aysi é uma empresa
-      de suplementos alimentares
-      que busca oferecer produtos
-      de alta qualidade e eficácia para 
-      atletas, praticantes de atividades
-      físicas e pessoas que buscam uma 
-      vida mais saudável.</p>
-      <p>ASIY &copy; 2026. Todos os direitos reservados.</p>
-      </div>
 
-      <div class="footer-section">
-        <h3>Links Rápidos</h3>
-        <ul>
-          <li><a href="./paginainicial.html">Início</a></li>
-          <li><a href="paginaAcessórios.html">Acessórios</a></li>
-          <li><a href="./roupas.html">Roupas</a></li>
-          <li><a href="paginaSuplementos.html">Suplementos</a></li>
-        </ul>
-      </div>
+    <footer>
+        <div class="footer-content">
 
-      <div class="footer-section">
-        <h3>Contato</h3>
-        <p>Email: contato@aysi.com</p>
-        <p>Telefone: (11) 1234-5678</p>
-        <p>Formas de Pagamento</p>
-        <img src="IMAGENS/image 271formasdepagamento (1).png" alt="pagamentosFormas" class="pagamento-icon">
+            <div class="footer-section">
+                <h3>AYSI</h3>
 
-      </div>
-    </div>
-  </footer>
+                <p>
+                    A Aysi é uma empresa de suplementos alimentares
+                    que busca oferecer produtos de alta qualidade e
+                    eficácia para atletas, praticantes de atividades
+                    físicas e pessoas que buscam uma vida mais saudável.
+                </p>
+
+                <p>AYSI &copy; 2026. Todos os direitos reservados.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+
+                <ul>
+                    <li><a href="./paginainicial.html">Início</a></li>
+                    <li><a href="./paginaAcessórios.html">Acessórios</a></li>
+                    <li><a href="./roupas.html">Roupas</a></li>
+                    <li><a href="./paginaSuplementos.html">Suplementos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contato</h3>
+
+                <p>Email: contato@aysi.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Formas de Pagamento</p>
+
+                <img
+                    src="./IMAGENS/image 271formasdepagamento (1).png"
+                    alt="Formas de pagamento"
+                    class="pagamento-icon"
+                >
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./BACK/login.js"></script>
+
 </body>
 </html>
