@@ -5,215 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="STYLE/header.css">
     <link rel="stylesheet" href="STYLE/paginacarrinho.css">
-    <title>carrinho</title>
+    <title>Carrinho | AYSI</title>
 </head>
 <body>
-     <!-- HEADER AQUI -->
-  <header>
-    <div class="top-bar">
-      frete gratis
-    </div>
+    <header>
+        <div class="top-bar">Frete grátis</div>
 
-    <div class="main-header">
-      <div class="left">
-        <img src="./IMAGENS/Logo.png" class="logo">
-        <img src="./IMAGENS/MENU.png" class="menu-icon">
+        <div class="main-header">
+            <div class="left">
+                <img src="./IMAGENS/Logo.png" class="logo" alt="AYSI">
+                <img src="./IMAGENS/MENU.png" class="menu-icon" alt="Menu">
+                <nav>
+                    <a href="./paginainicial.html" class="pag">Início</a>
+                    <a href="./paginaAcessórios.html" class="pag">Acessórios</a>
+                    <a href="./roupas.html" class="pag">Roupas</a>
+                    <a href="./paginaSuplementos.html" class="pag">Suplementos</a>
+                </nav>
+            </div>
 
-        <nav>
-          <a href="./paginainicial.html" class="pag">inicio</a>
-          <a href="paginaAcessórios.html"class="pag">acessórios<a>
-          <a href="./roupas.html" class="pag">roupas</a>
-          <a href="paginaSuplementos.html"class="pag">suplementos</a>
-          </a>
-        </nav>
-      </div>
-
-      <div class="right">
-        <div class="search-box">
-          <img src="./IMAGENS/Search.png" class="lupa">
-          <input type="text" placeholder="Pesquisar...">
+            <div class="right">
+                <div class="search-box">
+                    <img src="./IMAGENS/Search.png" class="lupa" alt="">
+                    <input type="text" placeholder="Pesquisar...">
+                </div>
+                <div class="icons">
+                        <img src="./IMAGENS/carrinhodecompras.png"
+                             class="icon" alt="Carrinho">
+                        <span id="contadorCarrinho">0</span>
+                    </a>
+                
+                    <a href="./login.html">
+                        <img src="./IMAGENS/login.png"
+                             class="icon" alt="Login">
+                    </a>
+                </div>
+            </div>
         </div>
+    </header>
 
-        <div class="icons">
-          <img src="./IMAGENS/carrinhodecompras.png" class="icon">
-          <a href="login.html">
-          <img src="./IMAGENS/login.png" class="icon">
-          </a>
-        </div>
-  </header>
-
-   <main class="carrinho-page">
-
-        <!-- PRODUTOS -->
+    <main class="carrinho-page">
         <section class="produtos">
-
-            <!-- Produto 1 -->
-            <div class="produto">
-
-                <div class="produto-imagem">
-                    <img src="IMAGENS/coqueteleira.png" alt="Coqueteleira Darklab">
-                </div>
-
-                <div class="produto-info">
-                    <h2>DARKLAB coqueteleira<br>- 900ml</h2>
-                    <span class="preco">R$69,99</span>
-                </div>
-
-                <div class="produto-controle">
-                    <div class="quantidade">
-                        <button>+</button>
-                        <span>1</span>
-                        <button>-</button>
-                    </div>
-
-                    <button class="remover">REMOVER</button>
-                </div>
-
+            <div class="titulo-produtos">
+                <h2>SEUS PRODUTOS</h2>
+                <button type="button" id="limparCarrinho" class="limpar-carrinho">Limpar carrinho</button>
             </div>
 
-
-            <!-- Produto 2 -->
-            <div class="produto">
-
-                <div class="produto-imagem">
-                    <img src="IMAGENS/garrafaGrande.png" alt="Whey">
-                </div>
-
-                <div class="produto-info">
-                    <h2>GALÃODUX- de água-<br>1,8L</h2>
-                    <span class="preco">R$49,99</span>
-                </div>
-
-                <div class="produto-controle">
-                    <div class="quantidade">
-                        <button>+</button>
-                        <span>1</span>
-                        <button>-</button>
-                    </div>
-
-                    <button class="remover">REMOVER</button>
-                </div>
-
+            <div id="listaProdutos" class="lista-produtos">
+                <!-- Os produtos são inseridos automaticamente pelo carrinho.js -->
             </div>
 
-
-            <!-- Produto 3 -->
-            <div class="produto">
-
-                <div class="produto-imagem">
-                    <img src="IMAGENS/wheyMax.png" alt="Max Whey">
-                </div>
-
-                <div class="produto-info">
-                    <h2>MAX WHEY baunilha -<br>900 g</h2>
-                    <span class="preco">R$29,99</span>
-                </div>
-
-                <div class="produto-controle">
-                    <div class="quantidade">
-                        <button>+</button>
-                        <span>1</span>
-                        <button>-</button>
-                    </div>
-
-                    <button class="remover">REMOVER</button>
-                </div>
-
-            </div>
-
+            <p id="carrinhoVazio" class="carrinho-vazio" hidden>
+                Seu carrinho está vazio. Escolha seus produtos na loja!
+            </p>
         </section>
 
-
-        <!-- CHECKOUT -->
         <section class="checkout">
+            <h1>CARRINHO <span>DA AYSI</span></h1>
 
-            <h1>
-                CARRINHO
-                <span>DA AYSI</span>
-            </h1>
+            <div class="resumo">
+                <h2>Resumo da compra</h2>
+                <div class="linha-resumo">
+                    <span>Subtotal</span>
+                    <strong id="subtotal">R$ 0,00</strong>
+                </div>
+                <div class="linha-resumo">
+                    <span>Frete</span>
+                    <strong id="frete">A calcular</strong>
+                </div>
+                <div class="linha-resumo total">
+                    <span>Total</span>
+                    <strong id="total">R$ 0,00</strong>
+                </div>
+                <small class="aviso-frete">Frete demonstrativo: grátis a partir de R$ 199,00; abaixo desse valor, R$ 15,00.</small>
+            </div>
 
-            <form>
+            <form id="formCheckout">
+                <label for="emailCliente">E-mail</label>
+                <input id="emailCliente" type="email" placeholder="EMAIL" required>
 
-                <input
-                    type="email"
-                    placeholder="EMAIL"
-                >
-
-                <input
-                    type="password"
-                    placeholder="SENHA"
-                >
+                <label for="senhaCliente">Senha</label>
+                <input id="senhaCliente" type="password" placeholder="SENHA" required>
 
                 <div class="documentos">
-
-                    <select>
-                        <option value="">N°</option>
-                        <option>1</option>
-                        <option>2</option>
-                    </select>
-
-                    <input
-                        type="text"
-                        placeholder="CPF"
-                    >
-
+                    <div>
+                        <label for="tipoDocumento">Tipo</label>
+                        <select id="tipoDocumento" required>
+                            <option value="">N°</option>
+                            <option value="CPF">CPF</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="cpfCliente">Documento</label>
+                        <input id="cpfCliente" type="text" placeholder="CPF" required>
+                    </div>
                 </div>
 
-                <small>*selecione</small>
-
-                <button
-                    type="button"
-                    class="pagamento"
-                >
+                <button type="button" class="pagamento" id="formasPagamento">
                     FORMAS DE PAGAMENTO
                 </button>
-
-                <button
-                    type="submit"
-                    class="finalizar"
-                >
+                <button type="submit" class="finalizar">
                     FINALIZAR COMPRA
                 </button>
-
             </form>
-
         </section>
-
     </main>
 
-  <footer>
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3>AYSI</h3>
-      <p>A Aysi é uma empresa
-      de suplementos alimentares
-      que busca oferecer produtos
-      de alta qualidade e eficácia para 
-      atletas, praticantes de atividades
-      físicas e pessoas que buscam uma 
-      vida mais saudável.</p>
-      <p>ASIY &copy; 2026. Todos os direitos reservados.</p>
-      </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>AYSI</h3>
+                <p>A AYSI é uma empresa de suplementos alimentares que busca oferecer produtos de alta qualidade e eficácia para atletas, praticantes de atividades físicas e pessoas que buscam uma vida mais saudável.</p>
+                <p>AYSI © 2026. Todos os direitos reservados.</p>
+            </div>
 
-      <div class="footer-section">
-        <h3>Links Rápidos</h3>
-        <ul>
-          <li><a href="./paginainicial.html">Início</a></li>
-          <li><a href="./paginaAcessórios.html">Acessórios</a></li>
-          <li><a href="./roupas.html">Roupas</a></li>
-          <li><a href="./paginaSuplementos.html">Suplementos</a></li>
-        </ul>
-      </div>
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="./paginainicial.html">Início</a></li>
+                    <li><a href="./paginaAcessórios.html">Acessórios</a></li>
+                    <li><a href="./roupas.html">Roupas</a></li>
+                    <li><a href="./paginaSuplementos.html">Suplementos</a></li>
+                </ul>
+            </div>
 
-      <div class="footer-section">
-        <h3>Contato</h3>
-        <p>Email: contato@aysi.com</p>
-        <p>Telefone: (11) 1234-5678</p>
-        <p>Formas de Pagamento</p>
-        <img src="IMAGENS/image 271formasdepagamento (1).png" alt="pagamentosFormas" class="pagamento-icon">
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Email: contato@aysi.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Formas de Pagamento</p>
+                <img src="IMAGENS/image 271formasdepagamento (1).png" alt="Formas de pagamento" class="pagamento-icon">
+            </div>
+        </div>
+    </footer>
 
-      </div>
-    </div>
-  </footer>    
+    <script src="BACK/carrinho.js"></script>
 </body>
 </html>
