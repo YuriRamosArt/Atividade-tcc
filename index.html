@@ -1,146 +1,160 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AYSI</title>
-    <link rel="stylesheet" href="STYLE/header.css">
-    <link rel="stylesheet" href="STYLE/paginainicial.css">
-    <link rel="stylesheet" href="STYLE/styleFooter.css">
+    <link rel="stylesheet" href="./STYLE/header.css">
+    <link rel="stylesheet" href="./STYLE/index.css">
+    <link rel="stylesheet" href="./STYLE/styleFooter.css">
     <link rel="shortcut icon" href="./IMAGENS/Logo.png" type="image/x-icon">
 </head>
 <body>
-    <!-- HEADER AQUI -->
-  <header>
-    <div class="top-bar">
-      frete gratis
-    </div>
 
+<header>
+    <div class="top-bar">frete gratis</div>
     <div class="main-header">
-      <div class="left">
-        <img src="./IMAGENS/Logo.png" class="logo">
-        <img src="./IMAGENS/MENU.png" class="menu-icon">
-
-        <nav>
-          <a href="./paginainicial.html" class="pag">inicio</a>
-          <a href="paginaAcessórios.html"class="pag">acessórios<a>
-          <a href="./roupas.html" class="pag">roupas</a>
-          <a href="paginaSuplementos.html"class="pag">suplementos</a>
-          </a>
-        </nav>
-      </div>
-
-      <div class="right">
-        <div class="search-box">
-          <img src="./IMAGENS/Search.png" class="lupa">
-          <input type="text" placeholder="Pesquisar...">
+        <div class="left">
+            <img src="./IMAGENS/Logo.png" class="logo" alt="Logo AYSI">
+            <img src="./IMAGENS/MENU.png" class="menu-icon" alt="Menu">
+            <nav>
+                <a href="./index.html" class="pag">inicio</a>
+                <a href="./paginaAcessórios.html" class="pag">acessórios</a>
+                <a href="./roupas.html" class="pag">roupas</a>
+                <a href="./paginaSuplementos.html" class="pag">suplementos</a>
+            </nav>
         </div>
-
-        <div class="icons">
-<<<<<<< Updated upstream
-          <img src="./IMAGENS/carrinhodecompras.png" class="icon">
-=======
-<<<<<<< Updated upstream
-          <img src="./IMAGENS/carrinhodecompras.png" class="icon">
-=======
-          <a href="paginacarrinho.html"><img src="./IMAGENS/carrinho2.png" class="icon">
-          </a>
->>>>>>> Stashed changes
->>>>>>> Stashed changes
-          <a href="login.html">
-          <img src="./IMAGENS/login.png" class="icon">
-          </a>
+        <div class="right">
+            <div class="search-box">
+                <img src="./IMAGENS/Search.png" class="lupa" alt="Pesquisar">
+                <input type="text" placeholder="Pesquisar...">
+            </div>
+            <div class="icons">
+                <a href="./paginacarrinho.html" class="link-carrinho">
+                    <img src="./IMAGENS/carrinho2.png" class="icon" alt="Carrinho">
+                    <span id="contadorCarrinho">0</span>
+                </a>
+                <a href="./login.html">
+                    <img src="./IMAGENS/login.png" class="icon" alt="Login">
+                </a>
+            </div>
         </div>
-  </header>
-<!--CARROSEL-->
-    <div class="carrosel">
-        <div class="banner">
-            <img src="./IMAGENS/banner.png" alt="img">
-        </div>
-         
-         <button class="esquerda">&#10094;</button>
-         <button class="direita">&#10095;</button>
-        
     </div>
-    <!--MELHORES DA AYSI-->
+</header>
+
+<div class="carrosel">
+    <div class="banner">
+        <img src="./IMAGENS/banner.png" alt="Banner AYSI">
+    </div>
+    <button type="button" class="esquerda">&#10094;</button>
+    <button type="button" class="direita">&#10095;</button>
+</div>
+
 <section class="produtos">
     <h2>OS MELHORES DA AYSI</h2>
-
     <div class="cards">
 
         <div class="card">
-            <img src="./IMAGENS/garrafaGrande.png" alt="Galão">
+            <img src="./IMAGENS/garrafaGrande.png" alt="Galão DUX">
             <h3>GALÃO DUX de água - 1,8L</h3>
-
             <div class="estrelas">★★★★★</div>
-
             <p class="preco-antigo">R$49,99</p>
             <p class="preco">R$29,99 <span>NO PIX</span></p>
-
-            <button>Comprar</button>
+            <div class="area-compra">
+                <div class="quantidade">
+                    <button type="button" onclick="diminuir(this)">-</button>
+                    <input type="text" value="1" min="1" max="99">
+                    <button type="button" onclick="aumentar(this)">+</button>
+                </div>
+                <button type="button" onclick="abrirProduto('galao',this)">Comprar</button>
+            </div>
         </div>
 
         <div class="card">
-            <img src="./IMAGENS/camisaberzerk.png" alt="Camisa">
+            <img src="./IMAGENS/camisaberzerk.png" alt="Camisa Dragon">
             <h3>CAMISA Oversized Dragon</h3>
-
             <div class="estrelas">★★★★★</div>
-
             <p class="preco-antigo">R$69,99</p>
             <p class="preco">R$49,99 <span>NO PIX</span></p>
-
-            <button>Comprar</button>
-
+            <div class="area-compra">
+                <div class="quantidade">
+                    <button type="button" onclick="diminuir(this)">-</button>
+                    <input type="text" value="1" min="1" max="99">
+                    <button type="button" onclick="aumentar(this)">+</button>
+                </div>
+                <button type="button" onclick="abrirProduto('camisa',this)">Comprar</button>
+            </div>
         </div>
 
         <div class="card">
-            <img src="./IMAGENS/wheyMax.png" alt="Whey">
+            <img src="./IMAGENS/wheyMax.png" alt="Whey Max">
             <h3>MAX WHEY baunilha - 900g</h3>
-
             <div class="estrelas">★★★★★</div>
-
             <p class="preco-antigo">R$69,99</p>
             <p class="preco">R$49,99 <span>NO PIX</span></p>
-
-            <button>Comprar</button>
+            <div class="area-compra">
+                <div class="quantidade">
+                    <button type="button" onclick="diminuir(this)">-</button>
+                    <input type="text" value="1" min="1" max="99">
+                    <button type="button" onclick="aumentar(this)">+</button>
+                </div>
+                <button type="button" onclick="abrirProduto('whey',this)">Comprar</button>
+            </div>
         </div>
 
     </div>
-  </section>
+</section>
 
-  <footer>
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3>AYSI</h3>
-      <p>A Aysi é uma empresa
-      de suplementos alimentares
-      que busca oferecer produtos
-      de alta qualidade e eficácia para 
-      atletas, praticantes de atividades
-      físicas e pessoas que buscam uma 
-      vida mais saudável.</p>
-      <p>ASIY &copy; 2026. Todos os direitos reservados.</p>
-      </div>
-
-      <div class="footer-section">
-        <h3>Links Rápidos</h3>
-        <ul>
-          <li><a href="./paginainicial.html">Início</a></li>
-          <li><a href="paginaAcessórios.html">Acessórios</a></li>
-          <li><a href="./roupas.html">Roupas</a></li>
-          <li><a href="paginaSuplementos.html">Suplementos</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-section">
-        <h3>Contato</h3>
-        <p>Email: contato@aysi.com</p>
-        <p>Telefone: (11) 1234-5678</p>
-        <p>Formas de Pagamento</p>
-        <img src="./IMAGENS/formasPagmento.png" alt="pagamentosFormas" class="pagamento-icon">
-
-      </div>
+<div class="modal" id="modal">
+    <div class="modal-conteudo">
+        <button type="button" class="fechar-modal" onclick="fecharModal()">&times;</button>
+        <div class="modal-imagens">
+            <div class="imagem-principal">
+                <img src="" id="modalImg" alt="Produto selecionado">
+            </div>
+        </div>
+        <div class="modal-informacoes">
+            <h2 id="modalNome"></h2>
+            <p id="modalPreco"></p>
+            <p id="totalModal"></p>
+            <div class="quantidade-modal">
+                <button type="button" onclick="diminuirModal()">-</button>
+                <input type="text" id="qtdModal" value="1" min="1" max="99" readonly>
+                <button type="button" onclick="aumentarModal()">+</button>
+            </div>
+            <button type="button" id="adicionarCarrinho" onclick="adicionarCarrinho()">
+                Adicionar ao carrinho
+            </button>
+        </div>
     </div>
-  </footer>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>AYSI</h3>
+            <p>A Aysi é uma empresa de suplementos alimentares que busca oferecer produtos de alta qualidade e eficácia para atletas, praticantes de atividades físicas e pessoas que buscam uma vida mais saudável.</p>
+            <p>AYSI &copy; 2026. Todos os direitos reservados.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Links Rápidos</h3>
+            <ul>
+                <li><a href="./index.html">Início</a></li>
+                <li><a href="./paginaAcessórios.html">Acessórios</a></li>
+                <li><a href="./roupas.html">Roupas</a></li>
+                <li><a href="./paginaSuplementos.html">Suplementos</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contato</h3>
+            <p>Email: contato@aysi.com</p>
+            <p>Telefone: (11) 1234-5678</p>
+            <p>Formas de Pagamento</p>
+            <img src="./IMAGENS/formasPagmento.png" alt="Formas de pagamento" class="pagamento-icon">
+        </div>
+    </div>
+</footer>
+
+<script src="./BACK/index.js"></script>
 </body>
 </html>
