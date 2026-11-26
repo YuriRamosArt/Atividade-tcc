@@ -1,160 +1,237 @@
 
+/* CONFIGURAÇÃO GERAL */
+
+* {
+    box-sizing: border-box;
+}
 
 body {
-  margin: 0;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #B1D3FA, #3D3D3D);
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #B1D3FA, #3D3D3D);
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* CARTÃO DE CADASTRO */
 
 .card {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(12px); 
-  padding: 60px;
-  width: 460px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  padding-top: 70px;
-  margin: 120px auto 0 auto; /* empurra pra baixo e centraliza */
-  margin-top: 15px;
-  margin-top: 150px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+
+    padding: 60px;
+    width: 460px;
+    max-width: calc(100% - 30px);
+
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+    text-align: center;
+
+    padding-top: 70px;
+    margin: 150px auto 0;
 }
 
-.card h2{
-  margin-bottom: 20px;
+.card h2 {
+    margin-bottom: 20px;
 }
+
+
+/* GRUPOS DE INPUT */
 
 .input-group {
-  margin-bottom: 15px;
-  text-align: left;
+    margin-bottom: 15px;
+    text-align: left;
 }
 
 .input-group label {
-  font-size: 18px;
-  display: block;
-  margin-bottom: 8px;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 8px;
 }
 
 .input-group input {
-  padding: 15px;
-  width: 100%;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  margin-top: 5px;
+    padding: 15px;
+    width: 100%;
+
+    border-radius: 6px;
+    border: 1px solid #ccc;
+
+    margin-top: 5px;
+    font-size: 15px;
+
+    outline: none;
+    transition: 0.3s;
 }
 
 .input-group input:focus {
-  border-color: #4facfe;
+    border-color: #4facfe;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
 }
 
-button {
-  width: 50%;
-  padding: 10px;
-  border: none;
-  background: linear-gradient(to left, #B1D3FA, #3D3D3D);;
-  color: white;
-  font-size: 16px;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-top: 10px;
-  
+
+/* VISUALIZAÇÃO DE SENHA */
+
+.senha-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
 }
 
-.login-button:hover {
-  background: #000000;
+.senha-container input {
+    padding-right: 45px;
 }
 
-.cadastrar{
-  margin-top: 15px;
-  font-size: 17px;
+.olho-senha {
+    position: absolute;
+    right: 10px;
+
+    width: auto;
+    padding: 5px;
+
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+    margin-top: 5px;
 }
 
-.cadastrar a{
-  color: #000000;
-  text-decoration: none;
+.olho-senha:hover {
+    background: transparent;
 }
 
-.cadastro a:hover{
-  text-decoration: underline;;
+.olho-senha img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
 }
+
+.input-group small {
+    display: block;
+    margin-top: 6px;
+    font-size: 12px;
+    color: #222;
+}
+
+
+/* BOTÃO CADASTRAR */
+
+.card form > button {
+    width: 50%;
+    padding: 10px;
+
+    border: none;
+    background: linear-gradient(to left, #B1D3FA, #3D3D3D);
+
+    color: white;
+    font-size: 16px;
+
+    border-radius: 6px;
+    cursor: pointer;
+
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.card form > button:hover {
+    background: #000000;
+}
+
+
+/* MENSAGEM DE VALIDAÇÃO */
+
+#mensagemCadastro {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+/* LINK PARA LOGIN */
 
 .login-link {
-  margin-top: 15px;
-  font-size: 13px;
+    margin-top: 15px;
+    font-size: 13px;
 }
 
 .login-link a {
-  color: #000000;
-  text-decoration: none;
+    color: #000000;
+    text-decoration: none;
 }
 
 .login-link a:hover {
-  text-decoration: underline;
-  color: #004697;
+    text-decoration: underline;
+    color: #004697;
 }
 
-footer{
+
+/* RODAPÉ */
+
+footer {
     background: #181818;
     padding: 60px 10%;
     margin-top: 80px;
+
     color: white;
     border-top: 2px solid #BEE6FF;
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     justify-content: space-between;
     gap: 50px;
     flex-wrap: wrap;
 }
 
-.footer-section{
+.footer-section {
     flex: 1;
     min-width: 250px;
 }
 
-.footer-section h3{
+.footer-section h3 {
     font-size: 24px;
     margin-bottom: 20px;
     color: #BEE6FF;
 }
 
-.footer-section p{
+.footer-section p {
     line-height: 1.8;
     color: #d6d6d6;
     margin-bottom: 10px;
 }
 
-.footer-section ul{
+.footer-section ul {
     list-style: none;
+    padding: 0;
 }
 
-.footer-section ul li{
+.footer-section ul li {
     margin-bottom: 12px;
 }
 
-.footer-section ul li a{
+.footer-section ul li a {
     color: white;
     text-decoration: none;
     transition: 0.3s;
     font-weight: 500;
 }
 
-.footer-section ul li a:hover{
+.footer-section ul li a:hover {
     color: #BEE6FF;
     padding-left: 5px;
 }
 
-.pagamento-icon{
+.pagamento-icon {
     width: 330px;
+    max-width: 100%;
     margin-top: 15px;
+
     background: white;
     padding: 8px;
     border-radius: 10px;
 }
 
-footer::after{
+footer::after {
     content: "";
     display: block;
     width: 100%;
@@ -163,71 +240,34 @@ footer::after{
     margin-top: 40px;
 }
 
-footer{
-    background: #181818;
-    padding: 60px 10%;
-    margin-top: 80px;
-    color: white;
-    border-top: 2px solid #BEE6FF;
-}
 
-.footer-content{
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    flex-wrap: wrap;
-}
+/* RESPONSIVIDADE */
 
-.footer-section{
-    flex: 1;
-    min-width: 250px;
-}
+@media (max-width: 600px) {
 
-.footer-section h3{
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #BEE6FF;
-}
+    .card {
+        width: 100%;
+        padding: 35px 25px;
+        margin-top: 50px;
+    }
 
-.footer-section p{
-    line-height: 1.8;
-    color: #d6d6d6;
-    margin-bottom: 10px;
-}
+    .input-group label {
+        font-size: 16px;
+    }
 
-.footer-section ul{
-    list-style: none;
-}
+    .card form > button {
+        width: 70%;
+    }
 
-.footer-section ul li{
-    margin-bottom: 12px;
-}
+    footer {
+        padding: 40px 7%;
+    }
 
-.footer-section ul li a{
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
-    font-weight: 500;
-}
+    .footer-content {
+        gap: 30px;
+    }
 
-.footer-section ul li a:hover{
-    color: #BEE6FF;
-    padding-left: 5px;
-}
-
-.pagamento-icon{
-    width: 330px;
-    margin-top: 15px;
-    background: white;
-    padding: 8px;
-    border-radius: 10px;
-}
-
-footer::after{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    background: #333;
-    margin-top: 40px;
+    .footer-section {
+        min-width: 100%;
+    }
 }
