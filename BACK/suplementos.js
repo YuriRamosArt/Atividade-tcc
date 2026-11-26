@@ -1,5 +1,24 @@
 const modal = document.getElementById("modal");
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+const modalImg = document.getElementById("modalImg");
+const modalNome = document.getElementById("modalNome");
+const modalPreco = document.getElementById("modalPreco");
+const qtdInput = document.getElementById("qtdModal");
+
+const contador = document.getElementById("contadorCarrinho");
+
+let qtdAtual = 1;
+let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+function aumentar(botao){
+
+    const input = botao.parentElement.querySelector("input");
+
+=======
+>>>>>>> Stashed changes
 const produtos = {
 
     wheyMax: {
@@ -176,12 +195,246 @@ window.onclick = function(event) {
 
 function aumentar(botao){
     const input = botao.parentElement.querySelector("input");
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     input.value = Number(input.value) + 1;
 }
 
 function diminuir(botao){
+<<<<<<< Updated upstream
     const input = botao.parentElement.querySelector("input");
     if(Number(input.value) > 1){
         input.value = Number(input.value) - 1;
     }
 }
+=======
+<<<<<<< Updated upstream
+
+    const input = botao.parentElement.querySelector("input");
+
+=======
+    const input = botao.parentElement.querySelector("input");
+>>>>>>> Stashed changes
+    if(Number(input.value) > 1){
+        input.value = Number(input.value) - 1;
+    }
+}
+
+<<<<<<< Updated upstream
+function abrirProduto(botao){
+
+    const card = botao.closest(".cards");
+
+    const img = card.querySelector(".produto").src;
+    const nome = card.querySelector(".titulo").textContent;
+    const preco = card.querySelector(".preco").textContent;
+
+
+    const qtdCard = card.querySelector(".quantidade input").value;
+
+    qtdAtual = Number(qtdCard);
+
+    modalImg.src = img;
+    modalNome.textContent = nome;
+    modalPreco.textContent = preco;
+    qtdInput.value = qtdAtual;
+
+    modal.classList.add("ativo");
+}
+
+function fecharModal(){
+    modal.classList.remove("ativo");
+}
+
+modal.addEventListener("click", (e)=>{
+
+    if(e.target === modal){
+        fecharModal();
+    }
+
+});
+
+function aumentarModal(){
+
+    qtdAtual++;
+
+    qtdInput.value = qtdAtual;
+}
+
+function diminuirModal(){
+
+    if(qtdAtual > 1){
+
+        qtdAtual--;
+
+        qtdInput.value = qtdAtual;
+    }
+}
+
+function adicionarCarrinho(){
+
+    const produto = {
+
+        nome: modalNome.textContent,
+        preco: modalPreco.textContent,
+        img: modalImg.src,
+        quantidade: qtdAtual
+
+    };
+
+    carrinho.push(produto);
+
+    localStorage.setItem(
+        "carrinho",
+        JSON.stringify(carrinho)
+    );
+
+    atualizarContador();
+=======
+
+/* INTERAÇÃO COM O CARRINHO */
+
+
+/* =====================================
+   INTERAÇÃO COM O CARRINHO AYSI
+===================================== */
+
+// Produto atualmente aberto no modal
+let produtoSelecionado = null;
+
+// Recuperar carrinho salvo
+function obterCarrinho() {
+    return JSON.parse(localStorage.getItem("carrinho")) || [];
+}
+
+// Salvar carrinho
+function salvarCarrinho(carrinho) {
+    localStorage.setItem("carrinho", JSON.stringify(carrinho));
+    atualizarContadorCarrinho();
+}
+
+// Converter preço de "R$ 49,99" para 49.99
+function converterPreco(preco) {
+    return Number(
+        preco.replace("R$", "").trim().replace(/\./g, "").replace(",", ".")
+    );
+}
+
+// Atualizar contador do cabeçalho
+function atualizarContadorCarrinho() {
+    const contador = document.getElementById("contadorCarrinho");
+
+    if (!contador) return;
+
+    const carrinho = obterCarrinho();
+
+    const quantidadeTotal = carrinho.reduce((total, produto) => {
+        return total + produto.quantidade;
+    }, 0);
+
+    contador.textContent = quantidadeTotal;
+}
+
+// Identificar o produto aberto no modal
+function abrirProduto(idProduto) {
+
+    const produto = produtos[idProduto];
+
+    if (!produto) {
+        console.log("Produto não encontrado");
+        return;
+    }
+
+    produtoSelecionado = idProduto;
+
+    document.getElementById("modalImg").src = produto.imagemPrincipal;
+    document.getElementById("nomeProduto").textContent = produto.nome;
+    document.getElementById("precoProduto").textContent = produto.preco;
+    document.getElementById("parcelamento").textContent = produto.parcelamento;
+    document.getElementById("desProduto").textContent = produto.descricao;
+    document.getElementById("detProduto").textContent = produto.detalhes;
+
+    document.getElementById("mini1").src = produto.mini1;
+    document.getElementById("mini2").src = produto.mini2;
+    document.getElementById("mini3").src = produto.mini3;
+
+    document.getElementById("qtdModal").value = 1;
+
+    modal.style.display = "flex";
+}
+
+// Adicionar produto ao carrinho
+function adicionarProdutoCarrinho() {
+
+    if (!produtoSelecionado) {
+        alert("Selecione um produto primeiro!");
+        return;
+    }
+
+    const produto = produtos[produtoSelecionado];
+
+    const quantidade = Number(
+        document.getElementById("qtdModal").value
+    );
+
+    if (!Number.isInteger(quantidade) || quantidade < 1) {
+        alert("Selecione uma quantidade válida!");
+        return;
+    }
+
+    let carrinho = obterCarrinho();
+
+    // Verificar se o produto já existe
+    const produtoExistente = carrinho.find(item => {
+        return item.id === produtoSelecionado;
+    });
+
+    if (produtoExistente) {
+
+        // Somar quantidade
+        produtoExistente.quantidade += quantidade;
+
+    } else {
+
+        // Cadastrar novo produto
+        carrinho.push({
+            id: produtoSelecionado,
+            nome: produto.nome,
+            preco: converterPreco(produto.preco),
+            imagem: produto.imagemPrincipal,
+            quantidade: quantidade
+        });
+
+    }
+
+    salvarCarrinho(carrinho);
+>>>>>>> Stashed changes
+
+    alert("Produto adicionado ao carrinho!");
+
+    fecharModal();
+}
+
+<<<<<<< Updated upstream
+function atualizarContador(){
+
+    if(contador){
+
+        contador.textContent = carrinho.length;
+
+    }
+}
+
+atualizarContador();
+=======
+// Atualizar contador quando a página carregar
+document.addEventListener("DOMContentLoaded", function() {
+    atualizarContadorCarrinho();
+});
+
+// Atualizar contador também nesta página
+atualizarContadorCarrinho();
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
